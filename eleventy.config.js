@@ -14,6 +14,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 	});
+	eleventyConfig.addPassthroughCopy('./src/assets/icons')
 
 	eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: "en", // Required, this site uses "en"

@@ -32,12 +32,14 @@
 		<style>{% getBundle "css" %}</style>
 	</head>
 	<body>
+		{% include "partials/header.njk" %}
 
 		<main id="skip">
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
+		{% include "partials/footer.njk" %}
+
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>

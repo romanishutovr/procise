@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply text-primary-500;
+}
+
+.btn {
+  @apply py-4 px-8 min-w-[190px] rounded-lg leading-none;
+}
+
+/* color */
+.btn-primary {
+  @apply text-white border-2 bg-primary-500 border-primary-500  hover:bg-white hover:text-primary-500;
+}
+
+.btn-white {
+  @apply text-primary-500 bg-white border-2 border-white hover:bg-transparent hover:text-white;
+}
+
+.btn-accent {
+  @apply text-primary-500 bg-accent-500 border-2 border-accent-500 hover:bg-transparent;
+}
+
+/* size */
+.btn-small {
+  @apply py-3 px-6 min-w-[140px] rounded-none;
+}
+
+/* modifiers */
+.btn-accent-hover-solid {
+  @apply text-primary-500 bg-accent-500 border-2 border-accent-500 hover:bg-accent-400 hover:border-accent-400;
+}
