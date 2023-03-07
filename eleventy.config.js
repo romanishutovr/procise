@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -13,6 +14,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 	});
+
+	eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: "en", // Required, this site uses "en"
+  });
+
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
