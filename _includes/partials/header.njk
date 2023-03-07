@@ -1,30 +1,72 @@
-<header class="py-5 px-6 flex justify-between items-center">
-  <div class="flex items-center">
-    <img src="/assets/logo.png" alt="company logo" class="mr-10"/>
-    <nav>
-      <ul class="flex">
-        <li class="mr-10">Solutions</li>
-        <li class="mr-10">Productions</li>
-        <li class="mr-10">Customers</li>
-        <li class="mr-10">About</li>
-      </ul>
-    </nav>
+<header class="relative">
+  <div class="py-5 px-6 flex justify-between items-center ">
+    <div class="flex items-center">
+      <a href="/{{ page.lang }}">
+        <img src="/assets/logo.png" alt="company logo" class="mr-10"/>
+      </a>
+      <nav>
+        <ul class="flex">
+          <li class="mr-10 solutions">
+            <span class="cursor-pointer">
+              <a>Solutions</a>
+            </span>
+            <div class="dropdown-menu flex bg-white border-t border-gray-200">
+              <div class="p-11 border-r border-gray-200 ">
+                <div class="uppercase mb-3 px-2 py-3 text-lg">Solutions Areas</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Customer expierence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Technology excellence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Employee experience</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Operating excellence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Hyperautomation and low code</div>
+                <div class="my-3 border-b border-gray-200"></div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Industry solutions</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Value acceleration</div>
+              </div>
+              <div class="p-11">
+                <div class="uppercase mb-3 px-2 py-3 text-lg">Solutions Areas</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Customer expierence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Technology excellence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Employee experience</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Operating excellence</div>
+                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Hyperautomation and low code</div>
+              </div>
+              <div class="p-11 bg-[#F3F3F3] flex-grow pt-28">
+                <div class="text-2xl mb-4 text-semibold">Optimization</div>
+                <div class="mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                <button class="btn btn-primary btn-small">Learn More</button>
+              </div>
+            </div>
+          </li>
+          <li class="mr-10">
+            <a href="#">Productions</a>
+          </li>
+          <li class="mr-10">
+            <a href="/{{ page.lang }}/customers">Customers</a>
+          </li>
+          <li class="mr-10">
+            <a href="/{{ page.lang }}/about">About</a>
+          </li>
+        </ul>
+      </nav>
 
+    </div>
+
+    <div class="flex items-center">
+      <button class="btn btn-primary btn-small">
+        Get Started
+      </button>
+
+      <button class="ml-6">
+        <img src="/assets/scope.png" alt="search"/>
+      </button>
+      <button class="ml-6">
+        <img src="/assets/world.png" alt="search"/>
+      </button>
+      <button class="ml-6">
+        <img src="/assets/account.png" alt="search"/>
+      </button>
+    </div>
   </div>
 
-  <div class="flex items-center">
-    <button class="btn btn-primary btn-small">
-      Get Started
-    </button>
 
-    <button class="ml-6">
-      <img src="/assets/scope.png" alt="search"/>
-    </button>
-    <button class="ml-6">
-      <img src="/assets/world.png" alt="search"/>
-    </button>
-    <button class="ml-6">
-      <img src="/assets/account.png" alt="search"/>
-    </button>
-  </div>
 </header>

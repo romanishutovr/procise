@@ -12,7 +12,7 @@ html {
 
 /* color */
 .btn-primary {
-  @apply text-white border-2 bg-primary-500 border-primary-500  hover:bg-white hover:text-primary-500;
+  @apply text-white border-2 bg-primary-500 border-primary-500  hover:bg-transparent hover:text-primary-500;
 }
 
 .btn-white {
@@ -31,4 +31,27 @@ html {
 /* modifiers */
 .btn-accent-hover-solid {
   @apply text-primary-500 bg-accent-500 border-2 border-accent-500 hover:bg-accent-400 hover:border-accent-400;
+}
+
+
+/* .dropdown-menu-wrapper {
+  position: relative;
+} */
+
+.dropdown-menu {
+  max-height:0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  -webkit-transition: max-height .4s ease-in-out .4s;
+     -moz-transition: max-height .4s ease-in-out .4s;
+       -o-transition: max-height .4s ease-in-out .4s;
+      -ms-transition: max-height .4s ease-in-out .4s;
+          transition: max-height .4s ease-in-out .4s;
+}
+
+.solutions:hover .dropdown-menu {
+  max-height: 30em;
 }
