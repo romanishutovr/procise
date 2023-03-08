@@ -38,7 +38,7 @@ html {
   position: relative;
 } */
 
-.dropdown-first {
+/* .dropdown-first {
   max-height:0;
   overflow: hidden;
   position: absolute;
@@ -89,4 +89,84 @@ html {
 
   max-height:700px;
 
+} */
+/* .first{
+
+  width: 700px;
+  top: 54px;
+  left: -225px;
+  position: absolute;
+} */
+.dropdown {
+  margin-right: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown li {
+}
+
+.dropdown li a {
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown li ul {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  line-height: normal;
+  background-color: #fff;
+}
+
+.dropdown li ul li a {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown li ul li a:hover {
+  color: black;
+}
+
+.dropdown li ul li ul {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  top: -1px;
+}
+
+ul li:hover>a {
+  color: black;
+}
+
+ul li:hover>ul {
+  padding: 2.75rem 0 2.75rem 2.75rem;
+  height: 640px;
+  left: 0;
+  color: black;
+  display: block;
+}
+.last{
+  padding: 0 !important;
+  height: 100% !important;
+  width: 200% !important;
+}
+.last-block {
+  height: 584px;
+}
+.arrow{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+ position: absolute;
 }

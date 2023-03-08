@@ -5,54 +5,363 @@
         <img src="/assets/logo.png" alt="company logo" class="mr-10"/>
       </a>
       <nav>
-        <ul class="flex">
-          <li class="mr-10 solutions">
-            <span class="cursor-pointer">
-              <a>Solutions</a>
+        <ul class="dropdown">
+          <li>
+            <p>Solution</p>
+            <span class="arrow">
+              <svg
+                class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+                xmlns="http://www.w3.org/2000/svg"
+                viewbox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+              </svg>
             </span>
-            <div class="dropdown-first flex bg-white border-t border-gray-200">
-              <div class="p-11 border-r border-gray-200 ">
-                <div class="uppercase mb-3 px-2 py-3 text-lg">Solutions Areas</div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer test">Customer expierence
-                  <div>
-                    <div class=" dropdown-second">
-                      <div class="uppercase mb-3 px-2 py-3 text-lg">Solutions
-                      </div>
-                      <div class="test1 px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer  ">Customer expierence
-                        <div>
-                          <div class=" dropdown-tree  bg-[#F3F3F3] flex-grow  bg-[#F3F3F3] flex-grow  ">
-                            <div class="text-2xl mb-4 text-semibold">Optimization</div>
-                            <div class="mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
-                            <button class="btn btn-primary btn-small">Learn More</button>
-                          </div>
+            <ul class="w-3/12 border-t border-gray-200">
+              <li class="uppercase mb-3 px-2 py-3 text-lg">
+                <a href="#">SOLUTIONS AREAS</a>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Workflow Excellence</a>
+                <ul class="border-l border-t border-gray-200">
+                  <li class="uppercase mb-3 px-2 py-3 text-lg">
+                    <a href="">SOLUTIONS</a>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Optimization</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Optimization</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
                         </div>
-                      </div>
-                      <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Technology excellence</div>
-                      <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Employee experience</div>
-                      <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Operating excellence</div>
-                      <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Hyperautomation and low code</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Technology excellence</div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Employee experience</div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Operating excellence</div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Hyperautomation and low code</div>
-                <div class="my-3 border-b border-gray-200"></div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Industry solutions</div>
-                <div class="px-2 py-3 hover:bg-[#F3F3F3] rounded-lg cursor-pointer">Value acceleration</div>
-              </div>
-            </div>
-          </li>
-          <li class="mr-10">
-            <a href="#">Productions</a>
-          </li>
-          <li class="mr-10">
-            <a href="/{{ page.lang }}/customers">Customers</a>
-          </li>
-          <li class="mr-10">
-            <a href="/{{ page.lang }}/about">About</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Standardization</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Standardization</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Compliance</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Compliance</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Metrics & KPIs</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Metrics & KPIs</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Customer Service</a>
+                <ul class="border-l  border-t border-gray-200">
+                  <li class="uppercase mb-3 px-2 py-3 text-lg">
+                    <a href="">SOLUTIONS</a>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Customer Experience</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Customer Experience</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Customer Centric Workflows</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Customer Centric Workflows</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Self Service</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Self Service</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Mobile First</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Mobile First</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Technology Excellence</a>
+                <ul class="border-l  border-t border-gray-200">
+                  <li class="uppercase mb-3 px-2 py-3 text-lg">
+                    <a href="">SOLUTIONS</a>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">
+                      Optimize Operations
+                    </a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Optimize Operations</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">
+                      Strategize your Portfolio
+                    </a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Strategize your Portfolio</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">
+                      Deliver Intitiatives in time
+                    </a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Deliver Intitiatives in time</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">
+                      Scrum / Agile</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Scrum / Agile</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">
+                      SAFe</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">SAFe</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Operational Excellence</a>
+                <ul class="border-l  border-t border-gray-200">
+                  <li class="uppercase mb-3 px-2 py-3 text-lg">
+                    <a href="">SOLUTIONS</a>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Workflow & Valuestream Analysis</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Workflow & Valuestream Analysis</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Manage your Risk</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Manage your Risk</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Activate ESG Across the Enterprise</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Activate ESG Across the Enterprise</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Metrics & KPIs</a>
+                    <ul class="last">
+                      <li class=" mb-3 text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Metrics & KPIs</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Design Thinking & Sprints</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Design Thinking & Sprints</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Intelligent Automation</a>
+                <ul class="border-l  border-t border-gray-200">
+                  <li class="uppercase mb-3 px-2 py-3 text-lg">
+                    <a href="">SOLUTIONS</a>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Automate and Connect Anything</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Automate and Connect Anything</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Creator Workflows</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Creator Workflows</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="#">Service Prediction</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Service Prediction</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:bg-[#F3F3F3] rounded-lg">
+                    <a href="">Predictive Maintenance</a>
+                    <ul class="last">
+                      <li class=" mb-3  text-lg">
+                        <div class=" last-block  bg-[#F3F3F3] flex-grow  pt-20 pl-8">
+                          <div class=" uppercase text-2xl mb-4 text-semibold">Predictive Maintenance</div>
+                          <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                          <button class="btn btn-primary btn-small">Learn More</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <div class="my-3 border-b border-gray-200"></div>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Industries</a>
+              </li>
+              <li class="hover:bg-[#F3F3F3] rounded-lg">
+                <a href="">Value acceleration</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
