@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: Piotrovskyi/procise-landing
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+collections:
+  - name: "en_pages"
+    label: "En pages"
+    folder: "content/en"
+    create: true
+    slug: "{{pageName}}"
+    fields:
+      [
+        { label: "layout", name: "layout", widget: "hidden", default: "layouts/page.njk" },
+        { label: "page name", name: "pageName", widget: "string", required: false },
+        {
+          label: "Hero section",
+          name: "hero",
+          widget: "object",
+          fields:
+            [
+              { label: "title", name: "title", widget: "string", required: false },
+              { label: "subtitle", name: "subtitle", widget: "string" , required: false},
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string", required: false },
+              { label: "image", name: "image", widget: "image", required: false },
+            ],
+        },
+        {
+          label: "Content sections",
+          name: "contentSections",
+          widget: "list",
+          fields:
+            [
+              { label: "Image on the right", name: "imageOnTheRight", widget: "boolean", default: false , required: false},
+              { label: "title", name: "title", widget: "string", required: false },
+              { label: "subtitle", name: "subtitle", widget: "string", required: false },
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string" , required: false},
+              { label: "image", name: "image", widget: "image", required: false },
+            ],
+        },
+      ]

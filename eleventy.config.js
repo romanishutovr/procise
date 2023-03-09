@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.addPassthroughCopy('./src/assets/icons')
 	eleventyConfig.addPassthroughCopy('./js/')
+	eleventyConfig.addPassthroughCopy('./content/admin');
 
 	eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: "en", // Required, this site uses "en"

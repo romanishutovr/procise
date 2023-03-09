@@ -2,15 +2,64 @@
 layout: layouts/home.njk
 ---
 
-<h1 class="text-red-500">
-	Name - {{someData.name}}
+<section class="grid grid-cols-1 md:grid-cols-2 bg-[#112C40] ">
+  <div class="p-11 flex flex-col items-start justify-center">
+      <div class="text-white text-5xl mb-9">YOUR <span class="text-accent-500">TRUSTED</span> ADVISOR</div>
+      <div class="text-white leading-normal text-2xl mb-9">You are stuck or need an assessment? We help you get things under control before, during or even after a ServiceNow implementation.</div>
+      <button class="btn btn-accent">Let WORK Flow</button>
+  </div>
 
-	{% for link in page.url | locale_links %}
-  123
-    {# {%- if not loop.first %}/{% endif %} #}
-    <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{
-      link.label
-    }}</a>
-  {% endfor %}
-</h1>
+  <div>
+    <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover">
+  </div>
+</section>
+
+<section class="border-b border-gray-200 p-11 grid grid-cols-1 sm:grid-cols-3">
+  <div class="flex items-center justify-center">
+    <img src="/assets/icons/show.svg" alt="" class="mr-6">
+    Show Me
+  </div>
+    <div class="flex items-center justify-center">
+    <img src="/assets/icons/contact.svg" alt="" class="mr-6">
+    Contact Us
+  </div>
+    <div class="flex items-center justify-center">
+    <img src="/assets/icons/discover.svg" alt="" class="mr-6">
+    View Customer Stories
+  </div>
+</section>
+
+<section class="grid grid-cols-1 md:grid-cols-2 p-11 gap-8">
+  <div>
+    <img src="/assets/illustration-1.png" alt="">
+  </div>
+
+  <div class="flex flex-col justify-center items-start">
+    <div class="mb-6 text-4xl">The platform of platforms</div>
+    <div class="leading-normal mb-6 text-xl">
+      Behind every great experience is a great workflow. As the foundation for all digital workflows, the Now Platform connects people, functions, and systems across your organization.
+    </div>
+    <button class="btn btn-accent-hover-solid">Explore Platform</button>
+  </div>
+</section>
+
+<section class="p-11 text-white bg-[#032D42]">
+  <div class="text-4xl mb-6">Speak with a pro</div>
+  <div class="leading-normal mb-6 text-2xl">Connect wit experts at Procise to explore solutions and deliver business outcomes for your technology challenges.</div>
+  <button class="btn btn-white">Contact us</button>
+</section>
+
+{# <section class="bg-gray-200">
+  <button class="btn btn-primary">button</button>
+  <button class="btn btn-white">button</button>
+  <button class="btn btn-accent">button</button>
+  <button class="btn btn-accent btn-small">button</button>
+  <button class="btn btn-accent-hover-solid">button</button>
+</section> #}
+{# {% for link in page.url | locale_links %}
+  {%- if not loop.first %}/{% endif %}
+  <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{
+    link.label
+  }}</a>
+{% endfor %} #}
 
