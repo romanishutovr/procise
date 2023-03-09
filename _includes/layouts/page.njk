@@ -3,13 +3,13 @@ layout: layouts/base.njk
 ---
 
 <section class="grid grid-cols-2 text-[#293E40] mb-[122px]">
+  <div class="p-11 flex flex-col items-start justify-center">
+    <div class="font-bold text-5xl mb-9">{{ hero.title }}</div>
+    <div class=" leading-normal text-2xl mb-9">{{ hero.subtitle }}</div>
+    <button class="btn btn-primary">{{ hero.buttonLabel }}</button>
+  </div>
   <div>
     <img src={{ hero.image }} alt="" class="object-cover w-full h-full"></div>
-    <div class="p-11 flex flex-col items-start justify-center">
-      <div class="font-bold text-5xl mb-9">{{ hero.title }}</div>
-      <div class=" leading-normal text-2xl mb-9">{{ hero.subtitle }}</div>
-      <button class="btn btn-primary">{{ hero.buttonLabel }}</button>
-    </div>
   </section>
   {% for section in contentSections %}
     <section class="grid grid-cols-2 text-[#293E40] mb-[122px] ">
