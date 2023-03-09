@@ -34,69 +34,6 @@ html {
 }
 
 
-/* .dropdown-menu-wrapper {
-  position: relative;
-} */
-
-/* .dropdown-first {
-  max-height:0;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 84px;
-  -webkit-transition: max-height .4s ease-in-out .4s;
-     -moz-transition: max-height .4s ease-in-out .4s;
-       -o-transition: max-height .4s ease-in-out .4s;
-      -ms-transition: max-height .4s ease-in-out .4s;
-          transition: max-height .4s ease-in-out .4s;
-}
-.dropdown-second {
-
-  max-height:0;
-  overflow: hidden;
-  position: absolute;
-  left: 330px;
-  right:0;
-  top: 0;
-  -webkit-transition: max-height .4s ease-in-out .4s;
-     -moz-transition: max-height .4s ease-in-out .4s;
-       -o-transition: max-height .4s ease-in-out .4s;
-      -ms-transition: max-height .4s ease-in-out .4s;
-          transition: max-height .4s ease-in-out .4s;
-}
-.dropdown-tree {
-  max-height:0;
-  overflow: hidden;
-  position: absolute;
-  left: 200;
-  right:0;
-  top: 0;
-  -webkit-transition: max-height .4s ease-in-out .4s;
-     -moz-transition: max-height .4s ease-in-out .4s;
-       -o-transition: max-height .4s ease-in-out .4s;
-      -ms-transition: max-height .4s ease-in-out .4s;
-          transition: max-height .4s ease-in-out .4s;
-}
-
-.solutions:hover .dropdown-first {
-  max-height: 30em;
-}
-.test:hover .dropdown-second {
-  max-height: 30em;
-}
-.test1:hover .dropdown-tree {
-
-  max-height:700px;
-
-} */
-/* .first{
-
-  width: 700px;
-  top: 54px;
-  left: -225px;
-  position: absolute;
-} */
 .dropdown {
   margin-right: 20px;
   margin: 0;

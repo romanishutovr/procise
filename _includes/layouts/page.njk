@@ -6,7 +6,10 @@ layout: layouts/base.njk
   <div class="p-11 flex flex-col items-start justify-center">
     <div class="font-bold text-5xl mb-9">{{ hero.title }}</div>
     <div class=" leading-normal text-2xl mb-9">{{ hero.subtitle }}</div>
-    <button class="btn btn-primary">{{ hero.buttonLabel }}</button>
+    <button class="group relative btn overflow-hidden rounded-lg bg-white text-lg shadow border-solid border-2 border-primary-500 ">
+      <div class="absolute inset-0 w-0 bg-[#2a3d40] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+      <span class="relative text-black group-hover:text-white">{{ hero.buttonLabel }}</span>
+    </button>
   </div>
   <div>
     <img src={{ hero.image }} alt="" class="object-cover w-full h-full"></div>
@@ -17,7 +20,10 @@ layout: layouts/base.njk
         <div class="p-11 flex flex-col items-start justify-center">
           <div class="text-3xl mb-9 font-bold">{{ section.title }}</div>
           <div class=" leading-normal text-xl mb-9">{{ section.subtitle }}</div>
-          <button class="btn btn-primary">{{ section.buttonLabel }}</button>
+          <button class="group relative btn overflow-hidden rounded-lg bg-white text-lg shadow border-solid border-2 border-primary-500 ">
+            <div class="absolute inset-0 w-0 bg-[#2a3d40] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+            <span class="relative text-black group-hover:text-white">{{ section.buttonLabel }}</span>
+          </button>
         </div>
         <div>
           <img src={{ section.image }} alt="" class="object-contain w-full h-[360px]"></div>
@@ -27,7 +33,10 @@ layout: layouts/base.njk
             <div class="p-11 flex flex-col items-start justify-center">
               <div class="text-3xl mb-9 font-bold">{{ section.title }}</div>
               <div class=" leading-normal text-xl mb-9">{{ section.subtitle }}</div>
-              <button class="btn btn-primary">{{ section.buttonLabel }}</button>
+              <button class="group relative btn overflow-hidden rounded-lg bg-white text-lg shadow border-solid border-2 border-primary-500 ">
+                <div class="absolute inset-0 w-0 bg-[#2a3d40] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                <span class="relative text-black group-hover:text-white">{{ section.buttonLabel }}</span>
+              </button>
             </div>
           {% endif %}
         </section>
