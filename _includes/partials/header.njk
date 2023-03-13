@@ -22,12 +22,14 @@
 
         <div class="lang-change__menu ">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left">
-            <li class="">
-              <a href="/en" class="py-2 px-3 block">Global - English</a>
-            </li>
-            <li>
-              <a href="/de" class="py-2 px-3 block">Deutschland - Deutsch</a>
-            </li>
+            {% for item in metadata.languages %}
+              <li class="">
+                <a href="/{{item.code}}" class="py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
+                  {{item.text}}
+                  {% if page.lang == item.code %}<img src="/assets/check.png" alt="checkmark" class="ml-2 w-[20px]"/>{% endif %}
+                </a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </button>
