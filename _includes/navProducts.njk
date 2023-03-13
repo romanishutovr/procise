@@ -1,0 +1,45 @@
+<li class=" group/arrowProducts products mr-8">
+  <p>Products</p>
+  <span class="group-hover/arrowProducts:block flex  justify-center  absolute pl-5 pr-5 pb-[10px] hidden ">
+    <img class="max-w-[22px] max-h-[22px]" src="/assets/arrow.png" alt="#"></span>
+    <div class="dropdown-menu  bg-white  border-b border-t  border-gray-200 w-full ">
+      <ul class="max-w-[365px] p-11">
+        <li class="uppercase  px-2 py-3 text-lg w-[323px] ">
+          <a class="w-full block cursor-default" href="#">SOLUTIONS AREAS</a>
+        </li>
+        {% for nav in navProducts %}
+          <li class="group rounded-lg cursor-pointer px-2 pr-9  w-[323px]">
+            <a class=" w-full block group-hover:bg-[#F3F3F3] px-2 py-3" href="">{{ nav.firstDropTitle }}</a>
+            <ul class=" group  group-hover:block p-11  second-dropdown-block border-l border-gray-200 hidden">
+              <li class="uppercase  px-2 py-3 text-lg">
+                <a class="w-full block cursor-default">SOLUTIONS</a>
+              </li>
+              {% for item in nav.secondDrop.secondDropItems %}
+                <li class=" group/item rounded-lg cursor-pointer px-2 pr-9  w-[323px] ">
+                  <a class=" w-full block  group-hover/item:bg-[#F3F3F3] px-2 py-3 " href="">{{ item.secondDropTitle }}</a>
+                  <ul class=" group-hover/item:block third-dropdown-block hidden">
+                    <li class=" mb-3  text-lg h-[607px]">
+                      <div class="   bg-[#F3F3F3] flex-grow  pt-20 pl-8 h-[79%]">
+                        <div class=" uppercase text-2xl mb-4 text-semibold">{{ item.lastDropTitle }}</div>
+                        <div class="   mb-4 leading-normal max-w-[600px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</div>
+                        <button class="btn btn-primary btn-small">Learn More</button>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              {% endfor %}
+            </li>
+          </ul>
+        </li>
+      {% endfor %}
+      <div class="my-3 border-b border-gray-200 max-w-[70%]"></div>
+      <li class=" rounded-lg cursor-pointer px-2 pr-9  w-[323px]">
+        <a class="w-full block  hover:bg-[#F3F3F3] px-2 py-3" href="">Industries</a>
+      </li>
+      <li class="  rounded-lg cursor-pointer px-2 pr-9  w-[323px]">
+        <a class="w-full block  hover:bg-[#F3F3F3] px-2 py-3" href="">Value acceleration</a>
+      </li>
+    </ul>
+  </div>
+</li>
