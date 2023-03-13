@@ -9,7 +9,11 @@ module.exports = {
     container: {
       center: true,
     },
+
     extend: {
+      fontFamily: {
+        sans: ['DM Sans', 'sans-serif']
+      },
       colors: {
         primary: {
           500: "#293E40",

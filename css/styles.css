@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-  @apply text-primary-500;
+  @apply text-primary-500 font-sans;
+
 }
 
 .btn {
