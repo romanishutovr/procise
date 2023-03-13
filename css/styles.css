@@ -34,7 +34,6 @@ html {
   @apply text-primary-500 bg-accent-500 border-2 border-accent-500 hover:bg-accent-400 hover:border-accent-400;
 }
 
-
 .dropdown-menu {
   max-height:0;
   overflow: hidden;
@@ -74,4 +73,21 @@ html {
   padding-right: 20px;
   padding-bottom: 24px;
  position: absolute;
+}
+
+.lang-change:hover .lang-change__menu {
+  max-height: 30em;
+}
+
+.lang-change__menu {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 84px;
+  -webkit-transition: max-height .4s ease-in-out .4s;
+     -moz-transition: max-height .4s ease-in-out .4s;
+       -o-transition: max-height .4s ease-in-out .4s;
+      -ms-transition: max-height .4s ease-in-out .4s;
+          transition: max-height .4s ease-in-out .4s;
 }

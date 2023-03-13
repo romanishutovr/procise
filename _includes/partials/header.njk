@@ -10,17 +10,29 @@
         </ul>
       </nav>
     </div>
-    <div class="flex items-center">
+    <div class="flex items-center mr-2">
       <button class="btn btn-primary btn-small">
         Get Started
       </button>
-      {# <button class="ml-6">
+      {# <button class="ml-6 w-[26px]">
         <img src="/assets/scope.png" alt="search"/>
       </button> #}
-      <button class="ml-6">
-        <img src="/assets/world.png" alt="search"/>
+      <button class="ml-6 w-[26px] lang-change">
+        <img src="/assets/world.png" alt="change language"/>
+
+        <div class="lang-change__menu ">
+          <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left">
+            <li class="">
+              <a href="/en" class="py-2 px-3 block">Global - English</a>
+            </li>
+            <li>
+              <a href="/de" class="py-2 px-3 block">Deutschland - Deutsch</a>
+            </li>
+          </ul>
+        </div>
       </button>
-      {# <button class="ml-6">
+
+      {# <button class="ml-6 w-[26px]">
         <img src="/assets/account.png" alt="search"/>
       </button> #}
     </div>
