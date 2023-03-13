@@ -6,6 +6,9 @@ module.exports = {
   ],
   // plugins: [require("@tailwindcss/typography")],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         primary: {
