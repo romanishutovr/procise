@@ -63,8 +63,8 @@ html {
 .last{
   position: absolute;
   top: 0;
-  left: 85%;
-  width: 215%;
+  left: 100%;
+  width: 200%;
 
 }
 
