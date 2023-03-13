@@ -1,12 +1,19 @@
 <header class="relative">
-  <div class="py-5 px-6 flex justify-between items-center">
+  <div class="py-5 px-6 flex justify-between items-center border-t border-gray-200">
     <div class="flex items-center">
       <a href="/{{ page.lang }}">
         <img src="/assets/logo.png" alt="company logo" class="mr-10 w-[141px]"/>
       </a>
       <nav class="z-10">
-        <ul class="flex z-10">
+        <ul class="flex z-10 items-center">
           {% include "../navSolutions.njk" %}
+          {% include "../navProducts.njk" %}
+          <li class="products mr-8 cursor-pointer">
+            <p>Customers</p>
+          </li>
+          <li class="products mr-8 cursor-pointer">
+            <p>About</p>
+          </li>
         </ul>
       </nav>
     </div>
@@ -15,17 +22,16 @@
         Get Started
       </button>
       {# <button class="ml-6 w-[26px]">
-        <img src="/assets/scope.png" alt="search"/>
-      </button> #}
+              <img src="/assets/scope.png" alt="search"/>
+            </button> #}
       <button class="ml-6 w-[26px] lang-change">
         <img src="/assets/world.png" alt="change language"/>
-
         <div class="lang-change__menu ">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left">
             {% for item in metadata.languages %}
               <li class="">
-                <a href="/{{item.code}}" class="py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
-                  {{item.text}}
+                <a href="/{{ item.code }}" class="py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
+                  {{ item.text }}
                   {% if page.lang == item.code %}<img src="/assets/check.png" alt="checkmark" class="ml-2 w-[20px]"/>{% endif %}
                 </a>
               </li>
@@ -33,10 +39,9 @@
           </ul>
         </div>
       </button>
-
       {# <button class="ml-6 w-[26px]">
-        <img src="/assets/account.png" alt="search"/>
-      </button> #}
+              <img src="/assets/account.png" alt="search"/>
+            </button> #}
     </div>
   </div>
 </header>

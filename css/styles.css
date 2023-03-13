@@ -51,7 +51,11 @@ html {
 .solutions:hover .dropdown-menu {
   max-height: 30em;
 }
-.second{
+.products:hover .dropdown-menu {
+  max-height: 30em;
+}
+
+.second-dropdown-block{
   width: 25%;
   top: 0;
   left: 25%;
@@ -60,7 +64,8 @@ html {
   top: 0;
   height:480px;
 }
-.last{
+
+.third-dropdown-block{
   position: absolute;
   top: 0;
   left: 100%;
