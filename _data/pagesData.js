@@ -10,7 +10,6 @@ const langs = fs.readdirSync('./content').filter(filename => {
 
   return true
 })
-console.log(langs)
 
 
 const res=  langs.reduce((acc, lang) => {
@@ -27,5 +26,4 @@ const res=  langs.reduce((acc, lang) => {
   return {...acc, [lang]: langCustomPagesNames}
 },{})
 
-console.log(res)
 module.exports = res
