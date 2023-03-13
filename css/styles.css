@@ -54,7 +54,7 @@ html {
 .second{
   width: 25%;
   top: 0;
-    left: 25%;
+  left: 25%;
   max-height: 30em;
   position: absolute;
   top: 0;
@@ -72,7 +72,7 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 24px;
- position: absolute;
+  position: absolute;
 }
 
 .lang-change:hover .lang-change__menu {
