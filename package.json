@@ -12,6 +12,7 @@
 		"social-images": "eleventy-social-images --outputDir public --imageDir /img/social --dataFile ./src/_11ty/_social/pages.json --templatePath ./src/_11ty/_social/template.html --stylesPath ./src/_11ty/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1",
 		"dev:css": "npx tailwindcss -i css/styles.css -o _site/css/styles.css --watch --minify",
 		"dev:11ty": "eleventy --serve --watch",
+		"build": "npm run css:website && eleventy",
 		"icon": "npx pwa-asset-generator logo.png ./src/_11ty/_static/favicon -b -m -q 100 -t png -f -w -e "
 	},
 	"repository": {
