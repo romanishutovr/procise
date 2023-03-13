@@ -1,6 +1,5 @@
 ---
 layout: layouts/home.njk
-permalink: 404.html
 eleventyExcludeFromCollections: true
 ---
 # Content not found.
