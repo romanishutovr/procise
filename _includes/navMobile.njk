@@ -14,7 +14,7 @@
                 <a href="#" class="nav-dropdown">Solutions</a>
                 <div class="dropdown">
                     <ul>
-                        {% for nav in navSolutions %}
+                        {% for nav in navData.groupSolutions %}
                             <li class="item dropdownitem">
                                 <a href="#" class="nav-dropdown">{{ nav.firstDropTitle }}</a>
                                 <div class="dropdown">
@@ -48,7 +48,7 @@
                 <a href="#" class="nav-dropdown">Products</a>
                 <div class="dropdown">
                     <ul>
-                        {% for nav in navProducts %}
+                        {% for nav in navData.groupProducts %}
                             <li class="item dropdownitem">
                                 <a href="#" class="nav-dropdown">{{ nav.firstDropTitle }}</a>
                                 <div class="dropdown">

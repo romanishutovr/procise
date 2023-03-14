@@ -10,9 +10,25 @@ const langs = fs.readdirSync("./content").filter((filename) => {
 
   return true;
 });
+const groupSolutions = [];
 const groupProducts = [];
+function dataSorter(group, filename, parsed) {
+  const pageLink = filename.slice(0, -3);
 
-const res = langs.reduce((acc, lang) => {
+  const secondDrop = parsed.data.contentSections.map((item) => ({
+    secondDropTitle: item.title,
+    lastDropTitle: item.title,
+    lastDropDescription: item.subtitle,
+  }));
+
+  group.push({
+    pageLink,
+    firstDropTitle: parsed.data.pageName,
+    secondDrop,
+  });
+}
+
+langs.reduce((acc, lang) => {
   const langCustomPagesNames = fs
     .readdirSync(`./content/${lang}`)
     .filter((filename) => {
@@ -21,23 +37,13 @@ const res = langs.reduce((acc, lang) => {
     .forEach((filename, idx) => {
       const content = fs.readFileSync(`./content/${lang}/${filename}`, "utf8");
       const parsed = matter(content);
+      if (parsed.data.group === "solution") {
+        dataSorter(groupSolutions, filename, parsed);
+      }
       if (parsed.data.group === "product") {
-        const secondDrop = [];
-        parsed.data.contentSections.forEach((item) => {
-          secondDrop.push({
-            secondDropTitle: item.title,
-            lastDropTitle: item.title,
-            lasDropDescription: item.subtitle,
-          });
-        });
-
-        groupProducts.push({
-          pageLink: filename.slice(0, -3), // remove .md from end
-          firstDropTitle: parsed.data.pageName,
-          secondDrop,
-        });
+        dataSorter(groupProducts, filename, parsed);
       }
     });
 });
 
-module.exports = groupProducts;
+module.exports = { groupSolutions, groupProducts };
