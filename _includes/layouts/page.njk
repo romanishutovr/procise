@@ -18,7 +18,7 @@ layout: layouts/base.njk
 </section>
 
 {% for section in contentSections %}
-  <section class="mb-[122px]">
+  <section class="mb-[122px]" id="{{section.title | slugify}}">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 text-[#293E40] ">
       {% if section.imageOnTheRight %}
         <div class="py-11 flex flex-col items-start justify-center mx-4 md:mx-auto">
