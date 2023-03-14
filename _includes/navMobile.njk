@@ -1,0 +1,90 @@
+<div
+    class="container-mobile md:hidden block">
+    <!-- Ozmenu -->
+    <div class="menu-open">
+        <span class="open">
+            MENU</span>
+    </div>
+    <div class="ozmenu mt-4">
+        <div class="menu-close">
+            <span class="close"></span>
+        </div>
+        <ul class="ozmenu-nav">
+            <li class="item dropdownitem">
+                <a href="#" class="nav-dropdown">Solutions</a>
+                <div class="dropdown">
+                    <ul>
+                        {% for nav in navSolutions %}
+                            <li class="item dropdownitem">
+                                <a href="#" class="nav-dropdown">{{ nav.firstDropTitle }}</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        {% for item in nav.secondDrop %}
+                                            <li class="item dropdownitem">
+                                                <a href="#" class="nav-dropdown">{{ item.secondDropTitle }}</a>
+                                                <div class="dropdown">
+                                                    <ul>
+                                                        <li class="item">
+                                                            <a href="/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}">Learn More</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
+                        {% endfor %}
+                        <li class="item">
+                            <a href="#">Industries</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Value acceleration</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item dropdownitem">
+                <a href="#" class="nav-dropdown">Products</a>
+                <div class="dropdown">
+                    <ul>
+                        {% for nav in navProducts %}
+                            <li class="item dropdownitem">
+                                <a href="#" class="nav-dropdown">{{ nav.firstDropTitle }}</a>
+                                <div class="dropdown">
+                                    <ul>
+                                        {% for item in nav.secondDrop %}
+                                            <li class="item dropdownitem">
+                                                <a href="#" class="nav-dropdown">{{ item.secondDropTitle }}</a>
+                                                <div class="dropdown">
+                                                    <ul>
+                                                        <li class="item">
+                                                            <a href="/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}">Learn More</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
+                        {% endfor %}
+                        <li class="item">
+                            <a href="#">Procise Academy</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Customers</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">Customers</a>
+            </li>
+            <li class="item">
+                <a href="#">Value acceleration</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Ozmenu -->
+</div>

@@ -42,6 +42,6 @@ const res = langs.reduce((acc, lang) => {
     });
 });
 
-console.log(groupSolutions)
+console.log(groupSolutions);
 
 module.exports = groupSolutions;
