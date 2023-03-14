@@ -7,21 +7,23 @@
         <li class="uppercase  px-2 pr-9 text-lg ">
           <a class="w-full block cursor-default px-2 py-3" href="#">PRODUCT AREAS</a>
         </li>
-        {% for nav in navProducts %}
+        {% for nav in navData.groupProducts %}
           <li class="group rounded-lg cursor-pointer px-2 pr-9  ">
-            <a class=" w-full block group-hover:bg-[#F3F3F3] rounded-lg px-2 py-3" href="/{{ page.lang }}/{{nav.pageLink}}">{{ nav.firstDropTitle }}</a>
+            <a class=" w-full block group-hover:bg-[#F3F3F3] rounded-lg px-2 py-3" href="/{{ page.lang }}/{{ nav.pageLink }}">{{ nav.firstDropTitle }}</a>
             <ul class=" group  group-hover:block pl-8 pt-11 pb-11  second-dropdown-block border-l border-gray-200 hidden">
               <li class="uppercase  px-2 pr-9 text-lg">
                 <a class="w-full block cursor-default px-2 py-3">Products</a>
               </li>
               {% for item in nav.secondDrop %}
                 <li class=" group/item rounded-lg cursor-pointer px-2 pr-9   ">
-                  <a class=" w-full block  group-hover/item:bg-[#F3F3F3] rounded-lg px-2 py-3 " href="/{{ page.lang }}/{{nav.pageLink}}#{{item.secondDropTitle | slugify}}">{{ item.secondDropTitle }}</a>
+                  <a
+                    class=" w-full block  group-hover/item:bg-[#F3F3F3] rounded-lg px-2 py-3 "
+                    href="/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}">{{ item.secondDropTitle }}</a>
                   <ul class=" group-hover/item:block third-dropdown-block hidden">
                     <li class=" mb-3  text-lg h-[607px]">
                       <div class="bg-[#F3F3F3] flex-grow  pt-20 pl-8 h-[107%]">
                         <div class="uppercase text-2xl mb-4 text-semibold">{{ item.lastDropTitle }}</div>
-                        <div class="mb-4 leading-normal max-w-[600px]">{{ item.lasDropDescription }}</div>
+                        <div class="mb-4 leading-normal max-w-[600px]">{{ item.lastDropDescription }}</div>
                         <a class="btn btn-primary btn-small" href="/{{ page.lang }}/{{ nav.pageLink }}">Learn More</a>
                       </div>
                     </li>
