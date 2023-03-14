@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.njk
+group: solution
 pageName: workflow excellence
 hero:
   title: Workflow Excellence
@@ -32,6 +33,7 @@ contentSections:
       more about Lightstep from ServiceNow.
     buttonLabel: Access
     image: /assets/images/hp-now-platform.jpg.thumb.1700-2.png
+    buttonLink: "#"
   - imageOnTheRight: false
     title: Metrics & KPIs
     subtitle: Only ServiceNow can bring your solutions to life with the power of the
@@ -39,4 +41,5 @@ contentSections:
       and secure across your organization.
     buttonLabel: See Why
     image: /assets/images/hp-impact-content-block.jpg.thumb.1700-1.png
+    buttonLink: "#"
 ---
