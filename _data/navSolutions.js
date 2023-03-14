@@ -5,23 +5,27 @@ module.exports = [
       secondDropItems: [
         {
           secondDropTitle: "Optimization",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          lastDropTitle: "Optimization",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Standardization",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          lastDropTitle: "Standardization",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Compliance",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          lastDropTitle: "Compliance",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Metrics & KPIs",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          lastDropTitle: "Metrics & KPIs",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
       ],
     },
@@ -32,23 +36,27 @@ module.exports = [
       secondDropItems: [
         {
           secondDropTitle: "Customer Experience",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          lastDropTitle: "Customer Experience",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Customer Centric Workflows",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          lastDropTitle: "Customer Centric Workflows",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Self Service",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          lastDropTitle: "Self Service",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Mobile First",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          lastDropTitle: "Mobile First",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
       ],
     },
@@ -59,28 +67,33 @@ module.exports = [
       secondDropItems: [
         {
           secondDropTitle: "Optimize Operations",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          lastDropTitle: "Optimize & Automate Techn. Service Operations",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Strategize your Portfolio",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          lastDropTitle: "Optimize Technology Asset Investment",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Deliver Intitiatives in time",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          lastDropTitle: "Deliver strategic Technology Initiatives",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Scrum / Agile",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          lastDropTitle: "Scrum / Agile",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "SAFe",
-          lastDropTitle: "Optimization5",
-          lasDropDescription: "Optimization5",
+          lastDropTitle: "SAFe",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
       ],
     },
@@ -91,28 +104,33 @@ module.exports = [
       secondDropItems: [
         {
           secondDropTitle: "Workflow & Valuestream Analysis",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          lastDropTitle: "Workflow & Valuestream Analysis",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Manage your Risk",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          lastDropTitle: "Manage Risk & Resilience",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Activate ESG Across the Enterprise",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          lastDropTitle: "Activate ESG across the Enterprise",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Metrics & KPIs",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          lastDropTitle: "Metrics & KPIs",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Design Thinking & Sprints",
-          lastDropTitle: "Optimization5",
-          lasDropDescription: "Optimization5",
+          lastDropTitle: "Design Thinking & Sprints",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
       ],
     },
@@ -123,23 +141,27 @@ module.exports = [
       secondDropItems: [
         {
           secondDropTitle: "Automate and Connect Anything",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          lastDropTitle: "Automate and Connect Anything to ServiceNow",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Creator Workflows",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          lastDropTitle: "Creator Workflows",
+          lasDropDescription:
+            "Only ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.",
         },
         {
           secondDropTitle: "Service Prediction",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          lastDropTitle: "Service Prediction",
+          lasDropDescription:
+            "Deliver better experiences for developers, site reliability engineers (SREs), and customers with our cloud-native reliability platform. Learn more about Lightstep from ServiceNow.",
         },
         {
           secondDropTitle: "Predictive Maintenance",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          lastDropTitle: "Predictive Maintenance",
+          lasDropDescription:
+            "OptiOnly ServiceNow can bring your solutions to life with the power of the Now Platform®. Make technology service delivery resilient, cost-efficient, and secure across your organization.mization4",
         },
       ],
     },

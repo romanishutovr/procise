@@ -1,145 +1,112 @@
 module.exports = [
   {
-    firstDropTitle: "Products",
+    firstDropTitle: "The Clinic",
     secondDrop: {
       secondDropItems: [
         {
-          secondDropTitle: "Products",
-          lastDropTitle: "Products",
-          lasDropDescription: "Products",
+          secondDropTitle: "Stop the Bleeding",
+          lastDropTitle: "Stop the Bleeding",
+          lasDropDescription:
+            "Provide immediate assistance in identifying inefficiencies and implementing countermeasures to help eliminate shortcomings.",
         },
         {
-          secondDropTitle: "Standardization",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          secondDropTitle: "Intensive Care",
+          lastDropTitle: "Intensive Care",
+          lasDropDescription:
+            "Our intensive care unit provides the critical care and support for acutely poor processes and workflows.",
         },
         {
-          secondDropTitle: "Compliance",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
-        },
-        {
-          secondDropTitle: "Metrics & KPIs",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          secondDropTitle: "X-Ray",
+          lastDropTitle: "X-Ray",
+          lasDropDescription:
+            "X-ray processes & workflows to find what's broken or could be improved",
         },
       ],
     },
   },
   {
-    firstDropTitle: "Customer Service",
+    firstDropTitle: "The Workshop",
     secondDrop: {
       secondDropItems: [
         {
-          secondDropTitle: "Customer Experience",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          secondDropTitle: "Find",
+          lastDropTitle: "Find",
+          lasDropDescription:
+            "X-ray processes & workflows to find what's broken or could be improved.",
         },
         {
-          secondDropTitle: "Customer Centric Workflows",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          secondDropTitle: "Frame",
+          lastDropTitle: "Frame",
+          lasDropDescription:
+            "Quantifying the value of what's broken. Understand and prioritize based on performance impact to suggest improvinements using best practices.",
         },
         {
-          secondDropTitle: "Self Service",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
-        },
-        {
-          secondDropTitle: "Mobile First",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          secondDropTitle: "Fix",
+          lastDropTitle: "Fix",
+          lasDropDescription:
+            "Modernize legacy processes.Remediate exceptions and respond to critical business events without changing system.Enrich workflows across ServiceNow chatbots, portals, mobile devices, and workspaces to empower people to do more.",
         },
       ],
     },
   },
   {
-    firstDropTitle: "Technology Excellence",
+    firstDropTitle: "The Journey",
     secondDrop: {
       secondDropItems: [
         {
-          secondDropTitle: "Optimize Operations",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          secondDropTitle: "Excite",
+          lastDropTitle: "Excite",
+          lasDropDescription:
+            "Build sponsorship, excitement, and hype for the change.",
         },
         {
-          secondDropTitle: "Strategize your Portfolio",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          secondDropTitle: "Enable",
+          lastDropTitle: "Enable",
+          lasDropDescription:
+            "Deploy services and ensure everyone is enabled on how to use the new platform.",
         },
         {
-          secondDropTitle: "Deliver Intitiatives in time",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          secondDropTitle: "Expand",
+          lastDropTitle: "Expand",
+          lasDropDescription:
+            "Establish a sponsorship team, run training workshops, and manage support operations.",
         },
         {
-          secondDropTitle: "Scrum / Agile",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
-        },
-        {
-          secondDropTitle: "SAFe",
-          lastDropTitle: "Optimization5",
-          lasDropDescription: "Optimization5",
+          secondDropTitle: "Embed",
+          lastDropTitle: "Embed",
+          lasDropDescription:
+            "Measure adoption progress, promote success stories, and support users with self-help resources.",
         },
       ],
     },
   },
   {
-    firstDropTitle: "Operational Excellence ",
+    firstDropTitle: "The Reward",
     secondDrop: {
       secondDropItems: [
         {
-          secondDropTitle: "Workflow & Valuestream Analysis",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
+          secondDropTitle: "Being aware",
+          lastDropTitle: "Being aware",
+          lasDropDescription:
+            "Use real-time, in-platform data as the single source of truth - not scattered sources of information.",
         },
         {
-          secondDropTitle: "Manage your Risk",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
+          secondDropTitle: "Planning ahead",
+          lastDropTitle: "Planning ahead",
+          lasDropDescription:
+            "Get clarity on what matters and quickly redirect service coverage to where it's needed most.",
         },
         {
-          secondDropTitle: "Activate ESG Across the Enterprise",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
+          secondDropTitle: "Being prepared",
+          lastDropTitle: "Being prepared",
+          lasDropDescription:
+            "Monitor performance to identify areas for improvement and detect service bottlenecks before they occur.",
         },
         {
-          secondDropTitle: "Metrics & KPIs",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
-        },
-        {
-          secondDropTitle: "Design Thinking & Sprints",
-          lastDropTitle: "Optimization5",
-          lasDropDescription: "Optimization5",
-        },
-      ],
-    },
-  },
-  {
-    firstDropTitle: "Intelligent Automation",
-    secondDrop: {
-      secondDropItems: [
-        {
-          secondDropTitle: "Automate and Connect Anything",
-          lastDropTitle: "Optimization1",
-          lasDropDescription: "Optimization1",
-        },
-        {
-          secondDropTitle: "Creator Workflows",
-          lastDropTitle: "Optimization2",
-          lasDropDescription: "Optimization2",
-        },
-        {
-          secondDropTitle: "Service Prediction",
-          lastDropTitle: "Optimization3",
-          lasDropDescription: "Optimization3",
-        },
-        {
-          secondDropTitle: "Predictive Maintenance",
-          lastDropTitle: "Optimization4",
-          lasDropDescription: "Optimization4",
+          secondDropTitle: "Continual Improvement",
+          lastDropTitle: "Continual Improvement",
+          lasDropDescription:
+            "Take action on KPIs using time charts, forecasts, breakdowns, and dashboards.",
         },
       ],
     },

@@ -49,10 +49,10 @@ html {
 }
 
 .solutions:hover .dropdown-menu {
-  max-height: 30em;
+  max-height: 60em;
 }
 .products:hover .dropdown-menu {
-  max-height: 30em;
+  max-height: 60em;
 }
 
 .second-dropdown-block{
@@ -71,13 +71,6 @@ html {
   left: 100%;
   width: 200%;
 
-}
-
-.arrow{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 24px;
-  position: absolute;
 }
 
 .lang-change:hover .lang-change__menu {
