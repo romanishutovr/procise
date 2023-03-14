@@ -19,12 +19,12 @@ collections:
           default: "layouts/page.njk",
         },
         {
-          label: "page name",
-          name: "pageName",
+          label: "Group",
+          name: "group",
           widget: "select",
           options: ["solution", "product"],
         },
-        { label: "Group", name: "group", widget: "string" },
+        { label: "page name", name: "pageName", widget: "string" },
         {
           label: "Hero section",
           name: "hero",
