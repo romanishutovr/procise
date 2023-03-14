@@ -22,9 +22,9 @@ const res = langs.reduce((acc, lang) => {
       const content = fs.readFileSync(`./content/${lang}/${filename}`, "utf8");
       const parsed = matter(content);
       if (parsed.data.group === "product") {
-        const temp = [];
+        const secondDrop = [];
         parsed.data.contentSections.forEach((item) => {
-          temp.push({
+          secondDrop.push({
             secondDropTitle: item.title,
             lastDropTitle: item.title,
             lasDropDescription: item.subtitle,
@@ -34,7 +34,7 @@ const res = langs.reduce((acc, lang) => {
         groupProducts.push({
           pageLink: filename.slice(0, -3), // remove .md from end
           firstDropTitle: parsed.data.pageName,
-          secondDrop: { secondDropItems: temp },
+          secondDrop,
         });
       }
     });
