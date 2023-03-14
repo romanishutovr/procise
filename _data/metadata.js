@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Eleventy Base Blog v8",
+  title: "PROCISE | YOUR TRUSTED ADVISOR",
   url: "http://localhost:8080/",
   languages: [
     {
@@ -11,10 +11,5 @@ module.exports = {
       text: "Deutschland - Deutsch",
     },
   ],
-  description: "I am writing about my experiences as a naval navel-gazer.",
-  author: {
-    name: "Your Name Here",
-    email: "youremailaddress@example.com",
-    url: "https://example.com/about-me/",
-  },
+  description: "You are stuck or need an assessment? We help you get things under control before, during or even after a ServiceNow implementation.  "
 };
