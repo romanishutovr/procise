@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.njk
+group: product
 pageName: The Clinic
 hero:
   title: The Clinic
@@ -7,6 +8,7 @@ hero:
     nonumy eirmod tempor invidunt
   buttonLabel: Explore Solution
   image: /assets/images/sn-office-1-1.png
+  buttonLink: "#"
 contentSections:
   - imageOnTheRight: false
     title: Stop the Bleeding
@@ -14,15 +16,18 @@ contentSections:
       implementing countermeasures to help eliminate shortcomings.
     buttonLabel: Learn more
     image: /assets/images/csm_24604_wundverband_637076d123-1.png
+    buttonLink: "#"
   - imageOnTheRight: true
     image: /assets/images/how-long-to-become-a-nurse-blog-hero-1.png
     title: Intensive Care
     subtitle: Our intensive care unit provides the critical care and support for
       acutely poor processes and workflows.
     buttonLabel: Learn more
+    buttonLink: "#"
   - imageOnTheRight: false
     title: X-Ray
     subtitle: X-ray processes & workflows to find what's broken or could be improved
     buttonLabel: Learn more
     image: /assets/images/stage_g911132418_lg-1.png
+    buttonLink: "#"
 ---
