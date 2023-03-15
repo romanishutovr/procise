@@ -4,10 +4,118 @@ backend:
 
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
+
 collections:
   - name: "en_pages"
     label: "En pages"
     folder: "content/en"
+    create: true
+    slug: "{{pageName}}"
+    fields:
+      [
+        {
+          label: "layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/page.njk",
+        },
+        {
+          label: "Group",
+          name: "group",
+          widget: "select",
+          options: ["solution", "product"],
+        },
+        { label: "page name", name: "pageName", widget: "string" },
+        {
+          label: "Hero section",
+          name: "hero",
+          widget: "object",
+          fields:
+            [
+              { label: "title", name: "title", widget: "string" },
+              { label: "subtitle", name: "subtitle", widget: "string" },
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string", required: false },
+              { label: "image", name: "image", widget: "image" },
+            ],
+        },
+        {
+          label: "Content sections",
+          name: "contentSections",
+          widget: "list",
+          fields:
+            [
+              {
+                label: "Image on the right",
+                name: "imageOnTheRight",
+                widget: "boolean",
+                default: false,
+              },
+              { label: "title", name: "title", widget: "string" },
+              { label: "subtitle", name: "subtitle", widget: "string" },
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string", required: false },
+              { label: "image", name: "image", widget: "image" },
+            ],
+        },
+      ]
+
+  - name: "de_pages"
+    label: "De pages"
+    folder: "content/de"
+    create: true
+    slug: "{{pageName}}"
+    fields:
+      [
+        {
+          label: "layout",
+          name: "layout",
+          widget: "hidden",
+          default: "layouts/page.njk",
+        },
+        {
+          label: "Group",
+          name: "group",
+          widget: "select",
+          options: ["solution", "product"],
+        },
+        { label: "page name", name: "pageName", widget: "string" },
+        {
+          label: "Hero section",
+          name: "hero",
+          widget: "object",
+          fields:
+            [
+              { label: "title", name: "title", widget: "string" },
+              { label: "subtitle", name: "subtitle", widget: "string" },
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string", required: false },
+              { label: "image", name: "image", widget: "image" },
+            ],
+        },
+        {
+          label: "Content sections",
+          name: "contentSections",
+          widget: "list",
+          fields:
+            [
+              {
+                label: "Image on the right",
+                name: "imageOnTheRight",
+                widget: "boolean",
+                default: false,
+              },
+              { label: "title", name: "title", widget: "string" },
+              { label: "subtitle", name: "subtitle", widget: "string" },
+              { label: "button label", name: "buttonLabel", widget: "string", required: false },
+              { label: "button link", name: "buttonLink", widget: "string", required: false },
+              { label: "image", name: "image", widget: "image" },
+            ],
+        },
+      ]
+  - name: "ua_pages"
+    label: "UA pages"
+    folder: "content/ua"
     create: true
     slug: "{{pageName}}"
     fields:
