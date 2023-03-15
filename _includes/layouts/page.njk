@@ -3,8 +3,8 @@ layout: layouts/base.njk
 ---
 
 <section>
-  <div class="container grid grid-cols-1 md:grid-cols-2 text-[#293E40] mb-[122px] ">
-    <div class="py-11 flex flex-col items-start justify-center mx-4 md:mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 text-[#293E40] mb-[122px]">
+    <div class="py-11 px-6 flex flex-col items-start justify-center mx-4 md:mx-auto">
       <div class="font-bold text-5xl mb-9">{{ hero.title }}</div>
       <div class=" leading-normal text-2xl mb-9">{{ hero.subtitle }}</div>
       {% if hero.buttonLabel %}
@@ -20,7 +20,7 @@ layout: layouts/base.njk
 </section>
 
 {% for section in contentSections %}
-  <section class="mb-[122px]" id="{{section.title | slugify}}">
+  <section class="mb-[7rem]" id="{{section.title | slugify}}">
     <div class="container grid grid-cols-1 md:grid-cols-2 gap-10 text-[#293E40] ">
       {% if section.imageOnTheRight %}
         <div class="py-11 flex flex-col items-start justify-center mx-4 md:mx-auto">
