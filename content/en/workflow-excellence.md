@@ -35,8 +35,8 @@ contentSections:
   - imageOnTheRight: true
     title: Metrics & KPIs
     buttonLabel: Learn more
-    subtitle: Make your processes measurable and managable with the help of key
-      performance indicators.
+    subtitle: " Make your processes measurable and managable with the help of key
+      performance indicators."
     buttonLink: "#"
     image: /assets/images/metrciskpis-1.png
 ---
