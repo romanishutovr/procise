@@ -8,11 +8,11 @@
         <ul class="flex z-10 items-center">
           {% include "../navSolutions.njk" %}
           {% include "../navProducts.njk" %}
-          <li class="products mr-8 cursor-pointer">
+          {# <li class="products mr-8 cursor-pointer">
             <p>Customers</p>
-          </li>
+          </li> #}
           <li class="products mr-8 cursor-pointer">
-            <p>About</p>
+            <a href="/{{page.lang}}/about">About</a>
           </li>
         </ul>
       </nav>
@@ -21,11 +21,9 @@
       <button class="btn btn-primary btn-small">
         Get Started
       </button>
-      {# <button class="ml-6 w-[26px]">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <img src="/assets/scope.png" alt="search"/>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </button> #}
-      <button class="ml-6 w-[26px] lang-change mr-6">
-        <img src="/assets/world.png" alt="change language"/>
+
+      <button class="ml-6 lang-change">
+        <img src="/assets/world.png" alt="change language" class="w-[26px]" />
         <div class="lang-change__menu ">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left ">
             {% for item in metadata.languages %}
