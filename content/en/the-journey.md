@@ -31,4 +31,11 @@ contentSections:
     buttonLabel: Learn more
     buttonLink: "#"
     image: /assets/images/expanding-acquiring-a-company-internationally-ahero-d-1-1-.png
+  - imageOnTheRight: true
+    title: Embed
+    subtitle: Measure adoption progress, promote success stories, and support users
+      with self-help resources.
+    buttonLabel: Learn more
+    buttonLink: "#"
+    image: /assets/images/shutterstock_255921547-1-1-.png
 ---
