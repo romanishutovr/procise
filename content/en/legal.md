@@ -1,6 +1,6 @@
 ---
 layout: layouts/legal.njk
-group: product
+group: other
 pageName: About Us
 hero:
   subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
