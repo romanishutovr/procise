@@ -4,9 +4,10 @@
 @tailwind utilities;
 
 html {
-  @apply text-primary-500 font-sans;
-
+  @apply text-primary-500 font-sans min-w-[320px] text-xs md:text-base;
 }
+
+
 
 .btn {
   @apply py-4 px-8 min-w-[190px] rounded-lg leading-none;
