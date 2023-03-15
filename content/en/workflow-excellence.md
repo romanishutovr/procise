@@ -1,45 +1,42 @@
 ---
 layout: layouts/page.njk
 group: solution
-pageName: workflow excellence
+pageName: Workflow Excellence
 hero:
   title: Workflow Excellence
-  subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-    diam     nonumy eirmod tempor invidunt
-  buttonLabel: Explore solution
+  subtitle: Worklfow Excellence is the foundation for Operational Excellence. As
+    the foundation for all digital workflows, the NOW platform connects people,
+    functions and systems in your company.
+  buttonLabel: Explore Solution
   image: /assets/images/ports-in-2030-1.png
-  buttonLink: sdg
+  buttonLink: "#"
 contentSections:
-  - imageOnTheRight: true
+  - imageOnTheRight: false
     title: Optimization
-    subtitle: Deliver better experiences for developers, site reliability
-      engineers       (SREs), and customers with our cloud-native reliability
-      platform. Learn       more about Lightstep from ServiceNow.
-    buttonLabel: Access
-    buttonLink: sdg
-    image: /assets/images/l1-tech-i1-automated-service-ops-1.png
-  - imageOnTheRight: false
-    title: Standardization
-    subtitle: Only ServiceNow can bring your solutions to life with the power of
-      the       Now Platform®. Make technology service delivery resilient,
-      cost-efficient,       and secure across your organization.
-    buttonLabel: See Why
-    buttonLink: sdgsdg
-    image: /assets/images/why-servicenow-1.png
+    subtitle: Align processes with the customer (internal/external). Effectiveness
+      of processes is specifically improved by eliminating waste and increasing
+      value creation.
+    buttonLabel: Learn more
+    buttonLink: "#"
+    image: /assets/images/optimization-workflow-excellence-1.png
   - imageOnTheRight: true
-    title: Compliance
-    subtitle: Deliver better experiences for developers, site reliability engineers
-      (SREs), and customers with our cloud-native reliability platform. Learn
-      more about Lightstep from ServiceNow.
-    buttonLabel: Access
-    image: /assets/images/hp-now-platform.jpg.thumb.1700-2.png
+    subtitle: Document processes in a way that ensures easy digitization.
+    title: Standardization
+    buttonLabel: Learn more
     buttonLink: "#"
+    image: /assets/images/standardization-1.png
   - imageOnTheRight: false
-    title: Metrics & KPIs
-    subtitle: Only ServiceNow can bring your solutions to life with the power of the
-      Now Platform®. Make technology service delivery resilient, cost-efficient,
-      and secure across your organization.
-    buttonLabel: See Why
-    image: /assets/images/hp-impact-content-block.jpg.thumb.1700-1.png
+    title: Compliance
+    subtitle: Develop efficient process documentation to meet legal requirements
+      with an acceptable level of effort.
+    buttonLabel: Learn more
     buttonLink: "#"
+    image: /assets/images/compliance-1.png
+  - imageOnTheRight: true
+    title: Metrics & KPIs
+    buttonLabel: Learn more
+    subtitle: Make your processes measurable and managable with the help of key
+      performance indicators.
+    buttonLink: "#"
+    image: /assets/images/metrciskpis-1.png
 ---
