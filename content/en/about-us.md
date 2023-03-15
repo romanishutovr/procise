@@ -1,7 +1,7 @@
 ---
 layout: layouts/legal.njk
 group: other
-pageName: about Us
+pageName: About Us
 hero:
   subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor invidunt
