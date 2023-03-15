@@ -11,26 +11,43 @@
 </section>
 
 <footer>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 py-11 container mx-4 md:mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 py-11 container mx-4 md:mx-auto">
     <div class="flex flex-col justify-between items-start">
       <img src="/assets/logo.png" alt="company logo"class="w-[141px] mb-4"/>
       <img src="/assets/servicenow_badge.png" alt="" class="w-[125px]">
     </div>
     <div>
       <div class="mb-6 text-lg  font-bold opacity-70">Company</div>
-      <a class="mb-4 text-sm block">About</a>
-      <a class="mb-4 text-sm block">Career</a>
-      <a class="mb-4 text-sm block">Locations</a>
-      <a class="mb-4 text-sm block">Partners</a>
+      <a class="mb-4 text-sm block" href="/{{page.lang}}/about">About</a>
+      {# <a class="mb-4 text-sm block" href="/{{page.lang}}/career">Career</a> #}
+      <a class="mb-4 text-sm block" href="/{{page.lang}}/locations">Locations</a>
+      {# <a class="mb-4 text-sm block" href="/{{page.lang}}/partners">Partners</a> #}
     </div>
-    <div>
-      <div class="mb-6 text-lg  font-bold opacity-70">Resources</div>
+    {# <div>
+      <div class="mb-6 text-lg font-bold opacity-70">Resources</div>
       <a class="mb-4 text-sm block">Customer stories</a>
       <a class="mb-4 text-sm block">ServiceNow</a>
       <a class="mb-4 text-sm block">ExpertsNow</a>
+    </div> #}
+    <div>
+      <div class="mb-6 text-lg  font-bold opacity-70">Locations</div>
+      <div class="mb-2">
+        <div>
+          <b>Germany</b>
+        </div>
+        <div>Fellnerstrasse 5 60322 Frankfurt am Main</div>
+      </div>
+
+      <div class="mb-2">
+        <div>
+          <b>Poland</b>
+        </div>
+        <div>ul. Szosa Chełmińska 26/509 87-100 Toruń</div>
+      </div>
     </div>
     <div>
       <div class="mb-6 text-lg  font-bold opacity-70">Connect with us</div>
+      <a class="mb-4 text-sm block" href="https://www.linkedin.com/company/procise-gmbh/" target="_blank">LinkedIn</a>
     </div>
   </div>
 
@@ -38,10 +55,10 @@
     <div class="py-6 container  mx-4 md:mx-auto">
       <div class="font-bold mb-5">The world works with ServiceNow™</div>
       <div class="flex">
-        <div class="mr-10 text-xs">Privacy statement</div>
-        <div class="mr-10 text-xs">Cookie policy</div>
-        <div class="mr-10 text-xs">Cookie Preferences</div>
-        <div class="mr-10 text-xs">@2023 Procise. All rights reserved.</div>
+        <a class="mr-10 text-xs" href="/{{page.lang}}/legal">Legal stuff</a>
+        <a class="mr-10 text-xs">Cookie policy</a>
+        {# <a class="mr-10 text-xs">Cookie Preferences</a> #}
+        <a class="mr-10 text-xs">@2023 Procise. All rights reserved.</a>
       </div>
     </div>
   </div>

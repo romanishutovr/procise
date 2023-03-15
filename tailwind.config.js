@@ -4,7 +4,7 @@ module.exports = {
     "./.eleventy.js",
     "_includes/**/*.{html,njk,md,json,js}",
   ],
-  // plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")],
   theme: {
     container: {
       center: true,
