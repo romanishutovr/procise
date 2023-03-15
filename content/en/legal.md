@@ -1,5 +1,28 @@
 ---
-layout : layouts/legal.njk
+layout: layouts/legal.njk
+group: product
+pageName: About Us
+hero:
+  subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt
+  title: About Us
+  image: /assets/images/getty_519578900_316016-1.png
+contentSections:
+  - imageOnTheRight: false
+    title: About us
+    subtitle: At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+      kasd gubergren, no sea takimata sanctus est Lorem.
+    image: /assets/images/getty_519578900_316016-2.png
+  - imageOnTheRight: true
+    title: About us
+    subtitle: At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+      kasd gubergren, no sea takimata sanctus est Lorem.
+    image: /assets/images/getty_519578900_316016-2.png
+  - imageOnTheRight: false
+    title: About us
+    subtitle: At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+      kasd gubergren, no sea takimata sanctus est Lorem.
+    image: /assets/images/getty_519578900_316016-2.png
 ---
 # Terms and Conditions
 Last updated on March 10, 2023
