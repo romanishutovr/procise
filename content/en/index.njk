@@ -1,8 +1,8 @@
 ---
 layout : layouts/home.njk
 ---
-<section class="bg-[#112C40]">
-  <div class="grid grid-cols-1 md:grid-cols-2">
+<section class="bg-[#112C40] relative">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:absolute inset-0 container">
     <div class="py-11 px-6 flex flex-col items-start justify-center">
       <div class="text-white text-5xl mb-9">YOUR
         <span class="text-accent-500">TRUSTED</span>
@@ -16,8 +16,16 @@ layout : layouts/home.njk
       </button>
     </div>
 
+    <div >
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div >
+    </div>
+
     <div class="">
-      <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover max-h-[680px]"/>
+      <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover max-h-[680px] md:min-h-[550px]"/>
     </div>
   </div>
 </section>
