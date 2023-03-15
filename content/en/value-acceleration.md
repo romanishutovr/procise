@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-group: product
+group: other
 pageName: Value Acceleration
 hero:
   title: Value Acceleration
