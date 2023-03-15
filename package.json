@@ -6,11 +6,11 @@
 		"dev": "npm run css:website && run-p dev:*",
 		"go!": "run-s clean icon css:* eleventy social-images",
 		"clean": "rimraf public",
-		"css:website": "npx tailwindcss -i css/styles.css -o _site/css/styles.css css/mobileMenu.css -o _site/css/mobileMenu.css  --minify",
+		"css:website": "npx tailwindcss -i css/styles.css -o _site/css/styles.css --minify",
 		"css:social-img": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-social.css -o ./src/_11ty/_social/social.css --minify",
 		"eleventy": "eleventy",
 		"social-images": "eleventy-social-images --outputDir public --imageDir /img/social --dataFile ./src/_11ty/_social/pages.json --templatePath ./src/_11ty/_social/template.html --stylesPath ./src/_11ty/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1",
-		"dev:css": "npx tailwindcss -i css/styles.css -o _site/css/styles.css  css/mobileMenu.css -o _site/css/mobileMenu.css  --watch --minify",
+		"dev:css": "npx tailwindcss -i css/styles.css -o _site/css/styles.css --watch --minify",
 		"dev:11ty": "eleventy --serve --watch",
 		"build": "npm run css:website && eleventy",
 		"icon": "npx pwa-asset-generator logo.png ./src/_11ty/_static/favicon -b -m -q 100 -t png -f -w -e "
