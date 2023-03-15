@@ -90,3 +90,7 @@ html {
       -ms-transition: max-height .4s ease-in-out .4s;
           transition: max-height .4s ease-in-out .4s;
 }
+
+.prose h1 {
+  margin-top: 50px;
+}

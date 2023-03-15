@@ -1,101 +1,102 @@
 <div
     class="container-mobile md:hidden block">
-    <!-- Ozmenu -->
-    <div class="menu-open ">
-        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+  <!-- Ozmenu -->
+  <div class="menu-open ml-4">
+    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div class="ozmenu mt-4">
+    <div class="menu-close">
+      <span class="close "></span>
     </div>
-    <div class="ozmenu mt-4">
-        <div class="menu-close">
-            <span class="close "></span>
+    <ul class="ozmenu-nav">
+      <li class="item dropdownitem">
+        <a class="nav-dropdown">Solutions</a>
+        <div class="dropdown">
+          <ul>
+            {% for nav in navData.groupSolutions %}
+              <li class="item dropdownitem">
+                <a class="nav-dropdown">{{ nav.firstDropTitle }}</a>
+                <div class="dropdown">
+                  <ul>
+                    {% for item in nav.secondDrop %}
+                      <li class="item dropdownitem">
+                        <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
+                        <div class="dropdown">
+                          <ul>
+                            <li class="item">
+                              <p class="p-6">{{ item.lastDropDescription }}</p>
+                              <button
+                                                                type="submit"
+                                                                class="ml-6 mb-6  btn btn-primary btn-small"
+                                                                onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </li>
+            {% endfor %}
+            <li class="item">
+              <a>Industries</a>
+            </li>
+            <li class="item">
+              <a>Value acceleration</a>
+            </li>
+          </ul>
         </div>
-        <ul class="ozmenu-nav">
-            <li class="item dropdownitem">
-                <a class="nav-dropdown">Solutions</a>
+      </li>
+      <li class="item dropdownitem">
+        <a class="nav-dropdown">Products</a>
+        <div class="dropdown">
+          <ul>
+            {% for nav in navData.groupProducts %}
+              <li class="item dropdownitem">
+                <a class="nav-dropdown">{{ nav.firstDropTitle }}</a>
                 <div class="dropdown">
-                    <ul>
-                        {% for nav in navData.groupSolutions %}
-                            <li class="item dropdownitem">
-                                <a class="nav-dropdown">{{ nav.firstDropTitle }}</a>
-                                <div class="dropdown">
-                                    <ul>
-                                        {% for item in nav.secondDrop %}
-                                            <li class="item dropdownitem">
-                                                <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
-                                                <div class="dropdown">
-                                                    <ul>
-                                                        <li class="item">
-                                                            <p class="p-6">{{ item.lastDropDescription }}</p>
-                                                            <button
+                  <ul>
+                    {% for item in nav.secondDrop %}
+                      <li class="item dropdownitem">
+                        <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
+                        <div class="dropdown">
+                          <ul>
+                            <li class="item">
+                              <p class="p-6">{{ item.lastDropDescription }}</p>
+                              <button
                                                                 type="submit"
                                                                 class="ml-6 mb-6  btn btn-primary btn-small"
                                                                 onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
                             </li>
-                        {% endfor %}
-                        <li class="item">
-                            <a>Industries</a>
-                        </li>
-                        <li class="item">
-                            <a>Value acceleration</a>
-                        </li>
-                    </ul>
+                          </ul>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
                 </div>
-            </li>
-            <li class="item dropdownitem">
-                <a class="nav-dropdown">Products</a>
-                <div class="dropdown">
-                    <ul>
-                        {% for nav in navData.groupProducts %}
-                            <li class="item dropdownitem">
-                                <a class="nav-dropdown">{{ nav.firstDropTitle }}</a>
-                                <div class="dropdown">
-                                    <ul>
-                                        {% for item in nav.secondDrop %}
-                                            <li class="item dropdownitem">
-                                                <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
-                                                <div class="dropdown">
-                                                    <ul>
-                                                        <li class="item">
-                                                            <p class="p-6">{{ item.lastDropDescription }}</p>
-                                                            <button
-                                                                type="submit"
-                                                                class="ml-6 mb-6  btn btn-primary btn-small"
-                                                                onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </li>
-                        {% endfor %}
-                        <li class="item">
-                            <a href="">Procise Academy</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Value acceleration</a>
-                        </li>
-                    </ul>
-                </div>
+              </li>
+            {% endfor %}
+            <li class="item">
+              <a href="">Procise Academy</a>
             </li>
             <li class="item">
-                <a>Customers</a>
+              <a href="">Value acceleration</a>
             </li>
-            <li class="item">
-                <a>Value acceleration</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /Ozmenu -->
+          </ul>
+        </div>
+      </li>
+      <li class="item">
+        <a>Customers</a>
+      </li>
+      <li class="item">
+        <a>Value acceleration</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /Ozmenu -->
 </div>
