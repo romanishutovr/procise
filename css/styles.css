@@ -82,6 +82,7 @@ html {
 }
 
 .lang-change__menu {
+  z-index: 10;
   max-height: 0;
   overflow: hidden;
   position: absolute;

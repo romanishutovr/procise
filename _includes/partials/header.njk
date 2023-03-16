@@ -17,13 +17,16 @@
         </ul>
       </nav>
     </div>
+
     <div class="flex items-center mr-2">
       <button class="btn btn-primary btn-small hidden md:block">
         Get Started
       </button>
-      <button class="ml-6 lang-change">
-        <img src="/assets/world.png" alt="change language" class="w-[26px]"/>
-        <div class="lang-change__menu ">
+
+      <button class="ml-6 lang-change w-[44px] h-[44px] justify-center items-center">
+        <img src="/assets/world.png" alt="change language" class="w-[26px] h-[26px]"/>
+
+        <div class="lang-change__menu">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left ">
             {% for item in metadata.languages %}
               <li class="">
@@ -36,10 +39,8 @@
           </ul>
         </div>
       </button>
+
       {% include "../navMobile.njk" %}
-      {# <button class="ml-6 w-[26px]">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <img src="/assets/account.png" alt="search"/>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </button> #}
     </div>
   </div>
 </header>
