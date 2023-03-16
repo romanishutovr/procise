@@ -27,15 +27,11 @@
                       <li class="item dropdownitem">
                         <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
                         <div class="dropdown">
-                          <ul>
-                            <li class="item">
-                              <p class="p-6">{{ item.lastDropDescription }}</p>
+                              <p class="py-6">{{ item.lastDropDescription }}</p>
                               <button
                                                                 type="submit"
-                                                                class="ml-6 mb-6  btn btn-primary btn-small"
+                                                                class=" mb-6  btn btn-primary btn-small"
                                                                 onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
-                            </li>
-                          </ul>
                         </div>
                       </li>
                     {% endfor %}
@@ -52,6 +48,7 @@
           </ul>
         </div>
       </li>
+
       <li class="item dropdownitem">
         <a class="nav-dropdown">Products</a>
         <div class="dropdown">
@@ -65,15 +62,11 @@
                       <li class="item dropdownitem">
                         <a class="nav-dropdown">{{ item.secondDropTitle }}</a>
                         <div class="dropdown">
-                          <ul>
-                            <li class="item">
-                              <p class="p-6">{{ item.lastDropDescription }}</p>
-                              <button
-                                type="submit"
-                                class="ml-6 mb-6  btn btn-primary btn-small"
-                                onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
-                            </li>
-                          </ul>
+                          <p class="py-6">{{ item.lastDropDescription }}</p>
+                          <button
+                            type="submit"
+                            class=" mb-6  btn btn-primary btn-small"
+                            onClick="location.href='/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}'">Learn More</button>
                         </div>
                       </li>
                     {% endfor %}
@@ -91,10 +84,10 @@
         </div>
       </li>
       <li class="item">
-        <a>Customers</a>
+        <a href="/{{page.lang}}/customers">Customers</a>
       </li>
       <li class="item">
-        <a>Value acceleration</a>
+        <a href="/{{page.lang}}/about-us">About</a>
       </li>
     </ul>
   </div>
