@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
+{% import "ResponsiveImage.njk" as ResponsiveImage %}
 
 <section class="relative">
   <div class="grid grid-cols-1 md:grid-cols-2 text-[#293E40] md:absolute container inset-0">
@@ -21,7 +22,8 @@ layout: layouts/base.njk
     <div></div>
 
     <div>
-      <img src={{ hero.image }} alt="" class="object-cover w-full h-full max-h-[680px]"/>
+      {{ ResponsiveImage.ResponsiveImage(hero.image, "", "object-cover w-full h-full max-h-[680px]") }}
+      {# <img src={{ hero.image }} alt="" class="object-cover w-full h-full max-h-[680px]"/> #}
     </div>
   </div>
 </section>

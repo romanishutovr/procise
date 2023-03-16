@@ -1,0 +1,3 @@
+{% macro ResponsiveImage(src, alt='', class='text') %}
+ <img srcset="{{ src | srcSet }}" alt="{{alt}}" class="{{class}}"/>
+{% endmacro %}

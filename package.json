@@ -55,6 +55,7 @@
 		"@sindresorhus/slugify": "^2.2.0",
 		"gray-matter": "^4.0.3",
 		"install": "^0.13.0",
-		"npm": "^9.6.1"
+		"npm": "^9.6.1",
+		"sharp": "^0.31.3"
 	}
 }

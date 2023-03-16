@@ -8,6 +8,8 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
+const widthList = [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000];
+
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -43,6 +45,17 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginBundle);
 
 	// Filters
+
+	eleventyConfig.addFilter("srcSet", (src) => {
+		const extension = src.split(".").pop();
+		const baseName = src.split(".").slice(0, -1).join(".");
+		const srcSet = widthList.map((width) => {
+			return `${baseName}_width-${width}.${extension} ${width}w`;
+		})
+
+		return srcSet.join(", ");
+	});
+
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
