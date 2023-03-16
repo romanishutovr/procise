@@ -7,7 +7,9 @@ html {
   @apply text-primary-500 font-sans min-w-[320px] text-xs md:text-base;
 }
 
-
+.leading-1-25 {
+  line-height: 1.25;
+}
 
 .btn {
   @apply py-4 px-8 min-w-[190px] rounded-lg leading-none;
