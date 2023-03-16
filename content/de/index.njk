@@ -2,13 +2,13 @@
 layout : layouts/home.njk
 ---
 
-<section class="bg-[#112C40]  mb-20">
-  <div class="grid grid-cols-1 md:grid-cols-2">
+<section class="bg-[#112C40] relative mb-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 md:absolute inset-0 container">
     <div class="py-11 px-6 flex flex-col items-start justify-center">
-      <div class="text-white text-5xl mb-9">YOUR
+      <div class="text-white text-5xl mb-6 leading-1-25">YOUR
         <span class="text-accent-500">TRUSTED</span>
         ADVISOR</div>
-      <div class="text-white leading-normal text-2xl mb-9">
+      <div class="text-white leading-normal text-2xl mb-6">
         You are stuck or need an assessment? We help you get things under control before, during or even after a ServiceNow
         implementation.
       </div>
@@ -18,15 +18,20 @@ layout : layouts/home.njk
         <span class="relative text-black ">Get In Touch</span>
       </button>
     </div>
+    <div></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    <div></div>
     <div class="">
-      <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover max-h-[680px]"/>
+      <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover max-h-[680px] md:min-h-[550px]"/>
     </div>
   </div>
 </section>
-<section class=" mb-20">
-  <div class="container grid grid-cols-1 md:grid-cols-2 py-11 gap-8">
-    <div>
-      <img src="/assets/ports.png" alt=""/>
+
+<section class="mb-20">
+  <div class="container grid grid-cols-1 md:grid-cols-2 py-11 gap-10 md:mx-auto px-4">
+    <div class="w-full">
+      <img src="/assets/ports.png" alt="" class=" "/>
     </div>
     <div class="flex flex-col justify-center items-start">
       <div class="mb-6 text-4xl">Workflow Excellence</div>
