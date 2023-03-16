@@ -1,5 +1,5 @@
-<header class="relative">
-  <div class="py-5 px-6 flex justify-between items-center border-t border-gray-200">
+<header class="relative min-h-[84px] flex items-center">
+  <div class="w-full py-5 px-6 flex justify-between items-center border-t border-gray-200">
     <div class="flex items-center">
       <a href="/{{ page.lang }}">
         <img src="/assets/logo.png" alt="company logo" class="md:mr-10 w-[141px]"/>
@@ -26,11 +26,11 @@
       <button class="ml-6 lang-change w-[44px] h-[44px] justify-center items-center flex">
         <img src="/assets/world.png" alt="change language" class="w-[26px] h-[26px]"/>
 
-        <div class="lang-change__menu">
+        <div class="text-2xl md:text-base lang-change__menu z-10 max-h-0 overflow-hidden absolute left-0 md:left-auto right-0 top-[84px] shadow">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left ">
             {% for item in metadata.languages %}
               <li class="">
-                <a href="/{{ item.code }}" class="py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
+                <a href="/{{ item.code }}" class="py-6 md:py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
                   {{ item.text }}
                   {% if page.lang == item.code %}<img src="/assets/check.png" alt="checkmark" class="ml-2 w-[20px]"/>{% endif %}
                 </a>
