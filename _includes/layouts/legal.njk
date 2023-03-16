@@ -1,6 +1,52 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="prose mx-auto px-10 py-[1px] max-w-none bg-[#F5F7FA] text-[#293E40 ]">
-  {{ content | safe }}
+<div class="bg-[#F5F7FA] text-[#293E40]">
+  <div class="prose mx-auto px-10 py-[1px] max-w-none">
+    {{ content | safe }}
+  </div>
+
+  <div class="px-10 pb-10 mt-[65px]">
+    <div class="font-bold text-xl mb-6">Company details</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <b>ProServ GmbH</b>
+        <br/>
+
+        <p>Fellnerstrasse 5
+      60322 Frankfurt am Main
+      Germany</p>
+        <p>Tel.: +49 (0) 69 242406625</p>
+        <p>info@proserv-now.com</p>
+        <br/>
+
+        <p>Register court: Amtsgericht Königstein</p>
+        <p>Managing Director: Bjorn Beyersdorff</p>
+        <br/>
+        <p>Register number: HRB 10262</p>
+        <p>VAT: DE325938855</p>
+      </div>
+
+      <div>
+        <b>ProServ Poland sp. z o.o.</b>
+        <br/>
+        <p>ul. Szosa Chełmińska 26/509
+          87-100 Toruń
+          Poland</p>
+        <br/>
+        <p>Managing Director: Michał Lewandowski</p>
+        <br/>
+        <p>NIP: 9562353122</p>
+        <p>REGON: 384103308</p>
+        <p>KRS: 0000799147</p>
+      </div>
+
+      <div>
+        <b>ProServ Estonia</b>
+        <br/>
+        <p>TBD</p>
+      </div>
+    </div>
+  </div>
+
 </div>
