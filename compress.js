@@ -20,15 +20,15 @@ module.exports = async function main() {
       const compressedBuffer = await sharp(
         `./public/assets/images/${imagePath}`
       )
-        .rotate()
+        .webp()
         .resize(currentWidth)
-        .jpeg({ mozjpeg: true }) // what is mozjpeg?
-        .toBuffer();
+        // .jpeg({ mozjpeg: true }) // what is mozjpeg?
+        .toFile(`${outputPath}${imageBaseName}_width-${currentWidth}.webp`);
 
-      await fs.writeFile(
-        `${outputPath}${imageBaseName}_width-${currentWidth}.${extenstion}`,
-        compressedBuffer
-      );
+      // await fs.writeFile(
+      //   `${outputPath}${imageBaseName}_width-${currentWidth}.${extenstion}`,
+      //   compressedBuffer
+      // );
     }
   }
 
