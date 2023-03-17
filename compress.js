@@ -4,7 +4,7 @@ const sharp = require("sharp");
 module.exports = async function main() {
   console.log("start");
   const outputPath = "_site/assets/images/";
-  const widthList = [640, 828, 1200, 2048, 3840];
+  const widthList = [640, 828, 1200, 2048];
   const startTs = Date.now();
   const imagesList = await fs.readdir("./public/assets/images/"); // add checks
 
