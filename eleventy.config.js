@@ -9,7 +9,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const main = require("./compress");
 
-const widthList = [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000];
+const widthList = [640, 750, 828, 1080, 1200, 1920, 2048, 3840];
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.after", () => {
