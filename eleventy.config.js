@@ -10,17 +10,16 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const main = require("./compress");
 
 const widthList = [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000];
-// async function q() {
-//   await main();
-// }
-// q();
+
 module.exports = function (eleventyConfig) {
-  main();
-  // Copy the contents of the `public` folder to the output folder
-  // For example, `./public/css/` ends up in `_site/css/`
-  eleventyConfig.addPassthroughCopy({
-    "./public/": "/",
-  });
+  eleventyConfig.on("eleventy.after", () => {
+    main();
+  }),
+    // Copy the contents of the `public` folder to the output folder
+    // For example, `./public/css/` ends up in `_site/css/`
+    eleventyConfig.addPassthroughCopy({
+      "./public/": "/",
+    });
   eleventyConfig.addPassthroughCopy("./src/assets/icons");
   eleventyConfig.addPassthroughCopy("./js/");
   eleventyConfig.addPassthroughCopy("./content/admin");
