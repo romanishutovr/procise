@@ -21,12 +21,12 @@
   width: auto;
 }
 
-.ozmenu ul.ozmenu-nav>li a:hover {
+.ozmenu ul.ozmenu-nav>li p:hover {
   display: block;
   color: rgb(0, 0, 0) !important;
 }
 
-.ozmenu ul li.dropdownitem>a:after {
+.ozmenu ul li.dropdownitem>p:after {
   width: 15px;
   height: 15px;
   text-align: center;
@@ -49,7 +49,7 @@
 }
 
 @media screen and (min-width: 993px) {
-  .ozmenu ul.ozmenu-nav>li a {
+  .ozmenu ul.ozmenu-nav>li p {
 
     color: #333 !important;
     font-weight: 500;
@@ -72,11 +72,11 @@
     padding-top: 0px !important;
   }
 
-  .ozmenu ul li.dropdownitem:hover>a {
+  .ozmenu ul li.dropdownitem:hover>p {
     border-radius: 8px 8px 0px 0px !important;
   }
 
-  .ozmenu ul li.dropdownitem ul li.dropdownitem:hover>a {
+  .ozmenu ul li.dropdownitem ul li.dropdownitem:hover>p {
     border-radius: 8px !important;
   }
 
@@ -109,7 +109,7 @@
     border-radius: 0px 8px 8px 8px;
   }
 
-  .ozmenu ul li.dropdownitem ul li a {
+  .ozmenu ul li.dropdownitem ul li p {
     color: #333 !important;
     font-weight: 400;
     text-decoration: none;
@@ -120,7 +120,7 @@
     font-size: 14px;
   }
 
-  .ozmenu ul.ozmenu-nav .dropdown ul li a:hover {
+  .ozmenu ul.ozmenu-nav .dropdown ul li p:hover {
     color: #333 !important;
     padding-left: 7px;
     transition: all 0.15s ease-out;
@@ -190,27 +190,27 @@
   width: 100%;
 }
 
-.ozmenu ul.ozmenu-nav .dropdown ul li a {
+.ozmenu ul.ozmenu-nav .dropdown ul li p {
   padding: 8px 0px;
 }
 
-.ozmenu ul li.dropdownitem ul li a,
-.ozmenu ul li.dropdownitem ul li .dropdown ul li a {
+.ozmenu ul li.dropdownitem ul li p,
+.ozmenu ul li.dropdownitem ul li .dropdown ul li p {
   border-bottom: 1px dotted #eee;
 }
 
-.ozmenu ul li.dropdownitem ul li:last-child a,
-.ozmenu ul li.dropdownitem ul li .dropdown ul li:last-child a {
+.ozmenu ul li.dropdownitem ul li:last-child p,
+.ozmenu ul li.dropdownitem ul li .dropdown ul li:last-child p {
   border-bottom: 0px !important;
 }
 
 /* Dropdown + Dropdown */
-.ozmenu ul li.dropdownitem ul li a:before,
-.ozmenu ul li.dropdownitem ul li .nav-dropdown ul li a:after {
+.ozmenu ul li.dropdownitem ul li p:before,
+.ozmenu ul li.dropdownitem ul li .nav-dropdown ul li p:after {
   display: none !important;
 }
 
-.ozmenu ul li.dropdownitem ul li .nav-dropdown ul li:last-child a {
+.ozmenu ul li.dropdownitem ul li .nav-dropdown ul li:last-child p {
   border-bottom: 0px !important;
 }
 
@@ -325,7 +325,7 @@
     width: 100%;
   }
 
-  .ozmenu ul.ozmenu-nav>li a {
+  .ozmenu ul.ozmenu-nav>li p {
     float: left;
     width: 100%;
     text-decoration: none;
@@ -334,7 +334,7 @@
     border-bottom: 1px solid #ddd;
   }
 
-  .ozmenu ul.ozmenu-nav>li a:hover {
+  .ozmenu ul.ozmenu-nav>li p:hover {
     float: left;
     width: 100%;
     transition: all 0.25s ease-out;
@@ -343,7 +343,7 @@
     padding: 10px 0px;
   }
 
-  .ozmenu ul li.dropdownitem>a:hover:after {
+  .ozmenu ul li.dropdownitem>p:hover:after {
     background-color: rgb(103, 130, 252) !important;
   }
 
@@ -352,7 +352,7 @@
     border-bottom: 1px solid rgba(103, 130, 252, 0.5) !important;
   }
 
-  .ozmenu ul.ozmenu-nav>li:last-child a {
+  .ozmenu ul.ozmenu-nav>li:last-child p {
     border-bottom: 0px solid #ddd;
   }
 
@@ -441,7 +441,7 @@
     mask-image: url('data:image/svg+xml;charset=utf-8,<svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path></svg>');
   }
 
-  .ozmenu.active ul li.dropdownitem>a.opened:after {
+  .ozmenu.active ul li.dropdownitem>p.opened:after {
     -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>') !important;
     mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>') !important;
   }
