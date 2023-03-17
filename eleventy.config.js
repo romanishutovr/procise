@@ -50,10 +50,9 @@ module.exports = function (eleventyConfig) {
   // Filters
 
   eleventyConfig.addFilter("srcSet", (src) => {
-    const extension = src.split(".").pop();
     const baseName = src.split(".").slice(0, -1).join(".");
     const srcSet = widthList.map((width) => {
-      return `${baseName}_width-${width}.${extension} ${width}w`;
+      return `${baseName}_width-${width}.webp ${width}w`;
     });
 
     return srcSet.join(", ");

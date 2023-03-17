@@ -2,6 +2,7 @@
 layout : layouts/home.njk
 ---
 
+{% import "ResponsiveImage.njk" as ResponsiveImage %}
 <section class="bg-[#112C40] relative mb-20">
   <div class="grid grid-cols-1 md:grid-cols-2 md:absolute inset-0 container">
     <div class="py-11 px-6 flex flex-col items-start justify-center">
@@ -22,25 +23,13 @@ layout : layouts/home.njk
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2">
     <div></div>
-    <div class="">
-      <img
-        srcset="/assets/images/bjorn_width-640.webp 640w, /assets/images/bjorn_width-828.webp 828w,
-          /assets/images/bjorn_width-1200.webp 1200w, /assets/images/bjornwidth-2048.webp 2048w,
-          /assets/images/bjorn_width-3840.webp 3840w"
-        alt=""
-        class="w-full h-full object-cover max-h-[680px] md:min-h-[550px]"/>
+    <div class="">{{ ResponsiveImage.ResponsiveImage("/assets/images/bjorn.png", "", "w-full h-full object-cover max-h-[680px] md:min-h-[550px]") }}
     </div>
   </div>
 </section>
 <section class="mb-20">
   <div class="container grid grid-cols-1 md:grid-cols-2 py-11 gap-10 md:mx-auto px-4">
-    <div class="w-full">
-      <img
-        srcset="/assets/images/ports_width-640.webp 640w, /assets/images/ports_width-828.webp 828w,
-          /assets/images/ports_width-1200.webp 1200w, /assets/images/ports_width-2048.webp 2048w,
-          /assets/images/ports_width-3840.webp 3840w"
-        alt=""
-        class=""/>
+    <div class="w-full">{{ ResponsiveImage.ResponsiveImage("/assets/images/ports.png", "", "") }}
     </div>
     <div class="flex flex-col justify-center items-start">
       <div class="mb-6 text-4xl">Workflow Excellence</div>
