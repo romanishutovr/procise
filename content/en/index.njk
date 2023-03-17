@@ -23,14 +23,24 @@ layout : layouts/home.njk
   <div class="grid grid-cols-1 md:grid-cols-2">
     <div></div>
     <div class="">
-      <img src="/assets/bjorn.png" alt="" class="w-full h-full object-cover max-h-[680px] md:min-h-[550px]"/>
+      <img
+        srcset="/assets/images/bjorn_width-640.png 640w, /assets/images/bjorn_width-828.png 828w,
+          /assets/images/bjorn_width-1200.png 1200w, /assets/images/bjornwidth-2048.png 2048w, /assets/images/bjorn_width-3840.png
+          3840w"
+        alt=""
+        class="w-full h-full object-cover max-h-[680px] md:min-h-[550px]"/>
     </div>
   </div>
 </section>
 <section class="mb-20">
   <div class="container grid grid-cols-1 md:grid-cols-2 py-11 gap-10 md:mx-auto px-4">
     <div class="w-full">
-      <img src="/assets/ports.png" alt="" class=" "/>
+      <img
+        srcset="/assets/images/ports_width-640.png 640w, /assets/images/ports_width-828.png 828w,
+          /assets/images/ports_width-1200.png 1200w, /assets/images/ports_width-2048.png 2048w, /assets/images/ports_width-3840.png
+          3840w"
+        alt=""
+        class=""/>
     </div>
     <div class="flex flex-col justify-center items-start">
       <div class="mb-6 text-4xl">Workflow Excellence</div>
