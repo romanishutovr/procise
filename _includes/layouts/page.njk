@@ -21,7 +21,6 @@ layout: layouts/base.njk
     <div></div>
     <div>
       {{ ResponsiveImage.ResponsiveImage(hero.image, "", "object-cover w-full h-full max-h-[680px]") }}
-      {# <img src={{ hero.image }} alt="" class="object-cover w-full h-full max-h-[680px]"/> #}
     </div>
   </div>
 </section>
@@ -40,21 +39,21 @@ layout: layouts/base.njk
           {% endif %}
         </div>
         <div>
-          {{ ResponsiveImage.ResponsiveImage(section.image, "", "object-contain w-full h-[360px]") }}
-        {% else %}
-          <div>
-            {{ ResponsiveImage.ResponsiveImage(section.image, "", "object-contain w-full h-[360px]") }}
-            <div class="py-11 flex flex-col items-start justify-center mx-4 md:mx-auto">
-              <div class="text-3xl mb-9 font-bold">{{ section.title }}</div>
-              <div class=" leading-normal text-xl mb-9">{{ section.subtitle }}</div>
-              {% if hero.buttonLabel %}
-                <button class="group relative btn overflow-hidden rounded-lg bg-white text-lg shadow border-solid border-2 border-primary-500 ">
-                  <div class="absolute inset-0 w-0 bg-[#2a3d40] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                  <span class="relative text-black group-hover:text-white">{{ section.buttonLabel }}</span>
-                </button>
-              {% endif %}
-            </div>
+          {{ ResponsiveImage.ResponsiveImage(section.image, "", "object-contain w-full h-[360px]") }}</div>
+      {% else %}
+        <div>
+          {{ ResponsiveImage.ResponsiveImage(section.image, "", "object-contain w-full h-[360px]") }}</div>
+        <div class="py-11 flex flex-col items-start justify-center mx-4 md:mx-auto">
+          <div class="text-3xl mb-9 font-bold">{{ section.title }}</div>
+          <div class=" leading-normal text-xl mb-9">{{ section.subtitle }}</div>
+          {% if hero.buttonLabel %}
+            <button class="group relative btn overflow-hidden rounded-lg bg-white text-lg shadow border-solid border-2 border-primary-500 ">
+              <div class="absolute inset-0 w-0 bg-[#2a3d40] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">{{ section.buttonLabel }}</span>
+            </button>
           {% endif %}
         </div>
-      </section>
-    {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}
