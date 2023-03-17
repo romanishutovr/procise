@@ -2,7 +2,7 @@
   <div class="w-full py-5 px-6 flex justify-between items-center border-t border-gray-200">
     <div class="flex items-center">
       <a href="/{{ page.lang }}">
-        <img src="/assets/logo.png" alt="company logo" class="md:mr-10 w-[141px]"/>
+        <img src="/assets/logo.png" alt="company logo" class="md:mr-10 w-[141px] h-[39px]"/>
       </a>
       <nav class="z-10 md:block hidden">
         <ul class="flex z-10 items-center">
@@ -17,29 +17,48 @@
         </ul>
       </nav>
     </div>
-
     <div class="flex items-center mr-2">
       <button class="btn btn-primary btn-small hidden md:block">
         Get Started
       </button>
-
       <button class="ml-6 lang-change w-[44px] h-[44px] justify-center items-center flex">
         <img src="/assets/world.png" alt="change language" class="w-[26px] h-[26px]"/>
-
-        <div class="text-2xl md:text-base lang-change__menu z-10 max-h-0 overflow-hidden absolute left-0 md:left-auto right-0 top-[84px] shadow">
+        <div class="text-2xl md:text-base lang-change__menu z-10 max-h-0 overflow-hidden absolute left-0 md:left-auto right-0
+            top-[84px] shadow">
           <ul class="bg-white border-t border-gray-200 p-2 rounded-b-xl text-left ">
             {% for item in metadata.languages %}
               <li class="">
                 <a href="/{{ item.code }}" class="py-6 md:py-2 px-3 hover:bg-[#F3F3F3] flex justify-between min-w-[210px]">
                   {{ item.text }}
-                  {% if page.lang == item.code %}<img src="/assets/check.png" alt="checkmark" class="ml-2 w-[20px]"/>{% endif %}
+                  {% if page.lang == item.code %}
+                    <div class="ml-2 w-[20px]">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="20" height="20" fill="url(#pattern0)"/>
+                        <defs>
+                          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_191_1690" transform="scale(0.02)"/>
+                          </pattern>
+                          <image
+                            id="image0_191_1690"
+                            width="50"
+                            height="50"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrklEQVR4nO2ZTWhTQRDHJ63iF6IiiKD4AQU1zewLPAtpsrMzr0kkiEov8WqP9SIKnjwUwYse7UEQPYkXDx70oqAHPQiiIHoQETyIFBXED4KiVG1lWyrJ5lWLbdKsvB/kEpZ5b3b+szOzDyAhISEhIeH/JhUUWJTmSrVa7QZfQZJzimTS/pDkEviIKpj9M05MOaL5BwB0gU+EpdIaJB5rdEQegG+g5otuNLLG9IFPKIoGFMlEvSOK+Az4RBjuW6mIXzREg/h5LpdbAT6BJKNOJH6iMQQ+kTGm3+ZCYzRkFHyip1JZhsRPHUm93JHPrwafUMSnGyUlEwFFe8AngjxnkWS8wREtF8AnmHkJannkFL7XqPU68AmlZcSR1GRG8yD4RK8xu5SWr42S4svgGV1K8z1HUu9Uf3kD+IQiPu5KKjDRQfAJRbQdNX92Ct918FBSd53O9lOQG9jUkqchRUaR3ELNV9KF0paFsqs0H3YlhcRD0Kp2QZF8qCtObzJ53j1fu3ZDFEnNkdQNaBU7i8X17jxgNY0mOjAfu/alnWjUFjLafx3666c0peUI/ANIcsi1Z2UGbSCFxCebHj49I5y3rcVcDaWZNyri946NO/YZ0C6QeKipoZuOzs25ttio+aqT3F/SzD2tf3sH1FJELR9jIvMEmTfDH7BFLmYTjsFiERSiXjvoxBydY7YNn/XQ0PzWWX9/0W8M01Nal4cxeVPLmGivu942gE5yf7MbAp2AKpdXKc3XmuUi3xXx8Mw661jMmhPQSVSr1W4kPht3otn/A+a1SssrJ58eh2G4FDoRJD5qr2vi8sap3uOz5VHHkNE8aI/T+Hrzu8U5BT6QNabPPZ3qnHi2lXk5+ELAvM29l7KyC7QUwDcCm+TEt+uiMQIek7KzjHefABISEhKgnfwCIzKzMYCeovMAAAAASUVORK5CYII="/>
+                        </defs>
+                      </svg>
+                    </div>
+                  {% endif %}
                 </a>
               </li>
             {% endfor %}
           </ul>
         </div>
       </button>
-
       {% include "../navMobile.njk" %}
     </div>
   </div>

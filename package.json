@@ -3,7 +3,7 @@
 	"version": "8.0.0",
 	"description": "A starter repository for a blog web site using the Eleventy site generator.",
 	"scripts": {
-		"dev": "npm run css:website && run-p dev:*",
+		"dev": "rm -rf _site  || true && npm run css:website && run-p dev:* ",
 		"go!": "run-s clean icon css:* eleventy social-images",
 		"clean": "rimraf public",
 		"css:website": "npx tailwindcss -i css/styles.css -o _site/css/styles.css --minify",
@@ -55,6 +55,7 @@
 		"@sindresorhus/slugify": "^2.2.0",
 		"gray-matter": "^4.0.3",
 		"install": "^0.13.0",
-		"npm": "^9.6.1"
+		"npm": "^9.6.1",
+		"sharp": "^0.31.3"
 	}
 }

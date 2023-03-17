@@ -1,0 +1,3 @@
+{% macro ResponsiveImage(src, alt='', class='text') %}
+  <img sizes="(max-width: 1440px) 2048w,(max-width: 800px) 1200w,(max-width: 600px) 828w,(max-width: 400px) 640w" srcset="{{ src | srcSet }}" alt="{{ alt }}" class="{{ class }} ">
+  {% endmacro %}
