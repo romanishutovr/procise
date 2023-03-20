@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="preconnect"> {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
     {#-
-                            		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-                            		1. You can add to them using `{% css %}`
-                            		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-                            		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-                            		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-                            		#}
+                                		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+                                		1. You can add to them using `{% css %}`
+                                		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+                                		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+                                		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+                                		#}
     {#- Add an arbitrary string to the bundle #}
     {# {%- css %}* { box-sizing: border-box; }{% endcss %} #}
     {#- Add the contents of a file to the bundle #}
@@ -29,8 +29,17 @@
     {# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
       {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
     <style>
-  {% getBundle "css" %}</style></head>
-    <body>{% include "partials/header.njk" %} <main id="skip">{{ content | safe }}
+  {% getBundle "css" %}</style></head> <script asyncsrc="https://www.googletagmanager.com/gtag/js?id=G-MY3VFFGVCY"> </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-MY3VFFGVCY');
+  </script>
+  <body>{% include "partials/header.njk" %}
+    <main id="skip">{{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}
     <!-- Current page: {{ page.url | htmlBaseUrl }} -->
