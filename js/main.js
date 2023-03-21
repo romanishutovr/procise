@@ -38,9 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuNav = document.querySelector(".dropdown-menu");
 
   elem?.addEventListener("mouseover", function (e) {
-    const first = document.querySelector(".pos1");
+    const first = elem.querySelector(".pos1");
     if (e.target.classList.contains("items")) {
-      first.classList.remove("group-hover/1:block");
+      first.classList.replace("block", "hidden");
+
       return;
     }
     if (
@@ -48,31 +49,32 @@ document.addEventListener("DOMContentLoaded", function () {
       e.target.classList.contains("arrow") ||
       e.target.classList.contains("title")
     ) {
-      first.classList.add("group-hover/1:block");
+      first.classList.replace("hidden", "block");
       return;
     }
   });
   return;
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const elem = document.querySelector(".products");
-//   const menuNav = document.querySelector(".dropdown-menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const elem = document.querySelector(".products");
+  const menuNav = document.querySelector(".dropdown-menu");
 
-//   elem?.addEventListener("mouseover", function (e) {
-//     const first = document.querySelector(".pos1");
-//     if (e.target.classList.contains("items")) {
-//       first.classList.remove("group-hover/1:block");
-//       return;
-//     }
-//     if (
-//       e.target.classList.contains("name") ||
-//       e.target.classList.contains("arrow") ||
-//       e.target.classList.contains("title")
-//     ) {
-//       first.classList.add("group-hover/1:block");
-//       return;
-//     }
-//   });
-//   return;
-// });
+  elem?.addEventListener("mouseover", function (e) {
+    const first = elem.querySelector(".pos1");
+    if (e.target.classList.contains("items")) {
+      first.classList.replace("block", "hidden");
+
+      return;
+    }
+    if (
+      e.target.classList.contains("name") ||
+      e.target.classList.contains("arrow") ||
+      e.target.classList.contains("title")
+    ) {
+      first.classList.replace("hidden", "block");
+      return;
+    }
+  });
+  return;
+});

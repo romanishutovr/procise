@@ -98,14 +98,3 @@ html {
 .prose h1 {
   margin-top: 50px;
 }
-.active-hover {
-  border-radius: 0.5rem;
-
-  --tw-bg-opacity: 1;
-    background-color: rgb(243 243 243/var(--tw-bg-opacity));
-}
-.active {
-
-  display:block !important;
-
-}

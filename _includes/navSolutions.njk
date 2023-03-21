@@ -1,4 +1,4 @@
-<li class=" group/arrowSolutions group/1  solutions mr-8">
+<li class=" group/arrowSolutions  solutions mr-8">
   <a class="name" href="#">Solutions</a>
   <span class="arrow z-20 group-hover/arrowSolutions:block flex justify-center  absolute pl-5 pr-5 pb-[10px] hidden ">
     <img class="arrow group-hover/arrowSolutions:block z-20 max-w-[22px] max-h-[22px]" src="/assets/arrow.png" alt="#"></span>
@@ -13,7 +13,7 @@
               class=" {% if loop.index >1 %} items {% endif %} w-full block group-hover:bg-[#F3F3F3] group-hover/{{ loop.index
                 }}:bg-[#F3F3F3] rounded-lg px-2 py-3"
               href="/{{ page.lang }}/{{ nav.pageLink }}">{{ nav.firstDropTitle }}</a>
-            <ul class="{{ "pos"+loop.index }} group group-hover:block group-hover/{{ loop.index }}:block pl-8 pt-11 pb-11 second-dropdown-block border-l border-gray-200 hidden">
+            <ul class="{{ "pos"+loop.index }} group group-hover:block pl-8 pt-11 pb-11 second-dropdown-block border-l border-gray-200 {% if loop.index === 1 %} block {% endif %} {% if loop.index >1 %} hidden {% endif %} ">
               <li class="uppercase px-2 pr-9 text-lg">
                 <p class="w-full block cursor-default px-2 py-3">SOLUTIONS</p>
               </li>
@@ -22,7 +22,8 @@
                   <a
                     class=" w-full block  group-hover/item:bg-[#F3F3F3]  group-hover/{{ loop.index }}:bg-[#F3F3F3] rounded-lg px-2 py-3 "
                     href="/{{ page.lang }}/{{ nav.pageLink }}#{{ item.secondDropTitle | slugify }}">{{ item.secondDropTitle }}</a>
-                  <ul class=" group-hover/item:block third-dropdown-block group-hover/{{ loop.index }}:block hidden">
+                  <ul class=" group-hover/item:block third-dropdown-block {% if loop.index === 1 %} block {% endif %} {% if loop.index >1 %}
+                      hidden {% endif %} ">
                     <li class="mb-3 text-lg h-[607px]">
                       <div class="bg-[#F3F3F3] flex-grow  pt-20 pl-8 h-[107%]">
                         <div class="uppercase text-2xl mb-4 text-semibold">{{ item.lastDropTitle }}</div>
@@ -39,11 +40,12 @@
         </li>
       {% endfor %}
       <div class="my-3 border-b border-gray-200 max-w-[70%]"></div>
-      {# <li class=" rounded-lg cursor-pointer px-2 pr-9  w-[323px]">
-                                                                                                                                                                                                                                                                                                              <a class="w-full block  hover:bg-[#F3F3F3] px-2 py-3" href="#">Industries</a>
-                                                                                                                                                                                                                                                                                                            </li> #}
-      <li class="  rounded-lg cursor-pointer px-2 pr-9  w-[323px]">
-        <a class="w-full block  hover:bg-[#F3F3F3] px-2 py-3" href="/{{ page.lang }}/value-acceleration">Value acceleration</a>
+      <li class="pl-11  cursor-pointer px-2 pr-9  ">
+        <a class="w-full rounded-lg block  hover:bg-[#F3F3F3] px-2 py-3" href="#">Industries</a>
+      </li>
+      <li class="  pl-11 cursor-pointer px-2 pr-9  ">
+        <a class="w-full block rounded-lg  hover:bg-[#F3F3F3] px-2 py-3" href="/{{ page.lang }}/value-acceleration">Value
+          acceleration</a>
       </li>
     </ul>
   </div>
