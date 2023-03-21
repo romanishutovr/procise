@@ -32,3 +32,47 @@ for (var i = 0; i < dropDowns.length; i++) {
     });
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elem = document.querySelector(".solutions");
+  const menuNav = document.querySelector(".dropdown-menu");
+
+  elem?.addEventListener("mouseover", function (e) {
+    const first = document.querySelector(".pos1");
+    if (e.target.classList.contains("items")) {
+      first.classList.remove("group-hover/1:block");
+      return;
+    }
+    if (
+      e.target.classList.contains("name") ||
+      e.target.classList.contains("arrow") ||
+      e.target.classList.contains("title")
+    ) {
+      first.classList.add("group-hover/1:block");
+      return;
+    }
+  });
+  return;
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const elem = document.querySelector(".products");
+//   const menuNav = document.querySelector(".dropdown-menu");
+
+//   elem?.addEventListener("mouseover", function (e) {
+//     const first = document.querySelector(".pos1");
+//     if (e.target.classList.contains("items")) {
+//       first.classList.remove("group-hover/1:block");
+//       return;
+//     }
+//     if (
+//       e.target.classList.contains("name") ||
+//       e.target.classList.contains("arrow") ||
+//       e.target.classList.contains("title")
+//     ) {
+//       first.classList.add("group-hover/1:block");
+//       return;
+//     }
+//   });
+//   return;
+// });
